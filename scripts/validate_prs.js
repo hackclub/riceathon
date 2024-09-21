@@ -11,8 +11,8 @@ const simpleApiReq = (r, method, data, headers) => {
     body: data ? JSON.stringify(data) : undefined,
   }).then((r) => r.json());
 };
-const owner = "OtterCodes101";
-const repo = "programmer-socks-ysws";
+const owner = process.env.OWNER_NAME || "OtterCodes101";
+const repo = process.env.REPO_NAME || "programmer-socks-ysws";
 const pull_number = process.env.PR_NUMBER;
 (async () => {
   const prData = await simpleApiReq(
