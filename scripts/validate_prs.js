@@ -1,11 +1,12 @@
 // using node-fetch instead of octokit.
 const fs = require("fs");
-const simpleApiReq = (r, method, data) => {
+const simpleApiReq = (r, method, data, headers) => {
   return fetch("https://api.github.com/" + r, {
     method: method || "GET",
     headers: {
+     ...(headers ?? {}),
       Accept: "application/vnd.github+json",
-      Authorization: process.env.GITHUB_TOKEN,
+      "Authorization": process.env.GITHUB_TOKEN,
     },
     body: data ? JSON.stringify(data) : undefined,
   }).then((r) => r.json());
@@ -15,10 +16,15 @@ const repo = "programmer-socks-ysws";
 const pull_number = process.env.PR_NUMBER;
 (async () => {
   const prData = await simpleApiReq(
-    `repos/${owner}/${repo}/pulls/${pull_number}`
+    `repos/${owner}/${repo}/pulls/${pull_number}`,
+    undefined,
+    undefined, 
+    {
+      "Accept": "application/vnd.github.text+json"
+    }
   );
-console.log(prData)
-  if (prData.body.includes("automation:labels:rice")) {
+  console.log(prData, owner, repo, pull_number)
+  if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
     simpleApiReq(`repos/${owner}/${repo}/issues/${pr_number}/labels`, "POST", {
       labels: ["rice-setup"],
     });
