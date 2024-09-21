@@ -23,7 +23,6 @@ const pull_number = process.env.PR_NUMBER;
       "Accept": "application/vnd.github.text+json"
     }
   );
-  console.log(prData, owner, repo, pull_number)
   if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
     simpleApiReq(`repos/${owner}/${repo}/issues/${pr_number}/labels`, "POST", {
       labels: ["rice-setup"],
