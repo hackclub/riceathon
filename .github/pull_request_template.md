@@ -17,3 +17,12 @@
 <!-- highly recommended. -->
 ## Extra Comments
 
+
+## Checklist
+- [ ] I have filled out the form correctly
+- [ ] I have read this  [message (slack)](https://hackclub.slack.com/archives/C07MLF9A8H5/p1726689185936959)
+<!-- NOTE: this is supposed to be automated but just in case. -->
+- [ ] i have my pr labled correctly 
+<!-- TODO: Contributors? should this stay? -->
+- [ ] I have not already submited one
+
