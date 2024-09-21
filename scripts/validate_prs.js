@@ -17,6 +17,7 @@ const pull_number = process.env.PR_NUMBER;
   const prData = await simpleApiReq(
     `repos/${owner}/${repo}/pulls/${pull_number}`
   );
+console.log(prData)
   if (prData.body.includes("automation:labels:rice")) {
     simpleApiReq(`repos/${owner}/${repo}/issues/${pr_number}/labels`, "POST", {
       labels: ["rice-setup"],
