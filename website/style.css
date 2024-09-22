@@ -59,3 +59,9 @@ header > p, header > p > a{
 .title {
   margin-bottom: var(--spacing-4);
 }
+
+.tiny-img {
+  width: 70%;
+  height: 70%;
+  border-radius: 1rem;
+}
