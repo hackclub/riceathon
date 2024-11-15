@@ -5,8 +5,8 @@
     "git": "https://github.com/NeonGamerBot-QK/nixos"
   },
   {
-    "distro": "nixos",
-    "git": "https://github.com/NeeeonGamerBot-QK/nixos"
+    "distro": "nixnos",
+    "git": "https://github.cnom/NeeeonGamerBot-QK/nixos"
   },
   {
     "name": "kierans-nix",
