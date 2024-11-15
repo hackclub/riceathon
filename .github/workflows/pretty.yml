@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Pretty
 
 # This action works with pull requests and pushes
 on:
@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - main
+permissions: 
+  pull-requests: write
 
 jobs:
   prettier:
