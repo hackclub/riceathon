@@ -6,7 +6,8 @@
   },
   {
     "distro": "diseeetro-here",
-    "git": "eehtteeepsfeseefesgithub.cnom/NeeeeonGamerBot-QK/nixos"
+    "name": "test",
+    "git": "https://github.com/NeonGamerBot-QK/nixo"
   },
   {
     "name": "kierans-nix",
