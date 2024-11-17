@@ -13,5 +13,35 @@
     "name": "kierans-nix",
     "distro": "nixos",
     "git": "https://github.com/kcoderhtml/dots"
+  },
+  {
+    "name": "askiiart",
+    "distro": "blendos",
+    "git": "https://github.com/askiiart/dotfiles"
+  },
+  {
+    "name": "noahUglyPink",
+    "distro": "mint",
+    "git": "https://github.com/PGtheVRguy/hackClubWinter/tree/main/ricathon"
+  },
+  {
+    "name": "leanghok-cozy",
+    "distro": "arch",
+    "git": "https://github.com/leanghok120/Dotfiles"
+  },
+  {
+    "name": "pixel-city",
+    "distro": "alpine",
+    "git": "https://github.com/fluxc0/therealdots"
+  },
+  {
+    "name": "bunnyguy",
+    "distro": "pop!_os",
+    "git": "https://github.com/snipchu/dotfiles"
+  },
+  {
+    "name": "TuinboonDev",
+    "distro": "arch",
+    "git": "https://github.com/TuinboonDev/.files"
   }
 ]
