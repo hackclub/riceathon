@@ -55,6 +55,11 @@
     "git": "https://github.com/TheTridentGuy/RaspbianRice/"
   },
   {
+    "name": "rednotsus",
+    "distro": "nixos",
+    "git": "https://github.com/RedNotSus/dotfiles/"
+  },
+  {
     "name": "firepup650",
     "distro": "debian",
     "git": "https://git.h.hackclub.app/Firepup650/dotfiles"
