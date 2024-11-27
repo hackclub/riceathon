@@ -103,5 +103,21 @@
     "name": "Cyclic",
     "distro": "arch",
     "git": "https://github.com/Cyclic007/Arch-Rice/tree/main"
+  },
+  {
+    "name": "Magical Paperclip",
+    "distro": "raspbian",
+    "git": "https://github.com/magical-paperclip/-magical-paperclip-riceathon"
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
