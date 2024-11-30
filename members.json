@@ -128,5 +128,10 @@
     "name": "leahcodes101",
     "distro": "arch",
     "git": "https://github.com/OtterCodes101/dotfiles"
+  },
+  {
+    "name": "headblockhead",
+    "distro": "nixos",
+    "git": "https://github.com/headblockhead/dotfiles"
   }
 ]
