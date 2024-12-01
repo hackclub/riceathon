@@ -123,5 +123,10 @@
     "name": "swarsin",
     "distro": "arch",
     "git": "https://github.com/Swarsin/dotfiles"
+  },
+  {
+    "name": "3XAY",
+    "distro": "Kubuntu",
+    "git": "https://github.com/3XAY/tree/3xay/"
   }
 ]
