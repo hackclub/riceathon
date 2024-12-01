@@ -1,4 +1,0 @@
-[TimeZones]
-LocalZone=America/New_York
-ZoneinfoDir=/usr/share/zoneinfo
-Zonetab=/usr/share/zoneinfo/zone.tab

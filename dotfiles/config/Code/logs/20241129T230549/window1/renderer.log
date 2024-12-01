@@ -1,7 +1,0 @@
-2024-11-29 23:05:51.053 [info] Started local extension host with pid 6216.
-2024-11-29 23:05:51.496 [error] [WonkyStudio.hackatime]: property `icon` is mandatory and must be of type `string`
-2024-11-29 23:05:51.497 [warning] [WonkyStudio.hackatime]: View container 'hackatime' does not exist and all views registered to it will be added to 'Explorer'.
-2024-11-29 23:05:51.541 [info] Settings Sync: Updating due to initialize
-2024-11-29 23:05:51.542 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
-2024-11-29 23:05:51.543 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
-2024-11-29 23:05:53.821 [info] [perf] Render performance baseline is 14ms
