@@ -1,0 +1,7 @@
+2024-11-29 23:17:41.154 [info] update#setState idle
+2024-11-29 23:18:11.148 [info] update#setState checking for updates
+2024-11-29 23:18:11.151 [info] update#setState idle
+2024-11-30 20:50:35.852 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-30 20:50:35.855 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-30 21:14:20.446 [info] Extension host with pid 8204 exited with code: 0, signal: unknown.
+2024-11-30 21:14:20.488 [error] [UtilityProcessWorker]: terminated unexpectedly with code 82, signal: unknown

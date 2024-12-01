@@ -1,0 +1,15 @@
+[KFileDialog Settings]
+Recent Files[$e]=JerseyCharted.ttf,file:$HOME/dotfiles/JerseyCharted.ttf
+Recent URLs[$e]=file:$HOME/dotfiles/
+detailViewIconSize=16
+
+[MainWindow]
+1280x800 screen: Height=686
+1280x800 screen: Width=1140
+1280x800 screen: Window-Maximized=true
+1280x800 screen: XPosition=29
+1280x800 screen: YPosition=40
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABQAAAALAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Virtual1=Virtual1

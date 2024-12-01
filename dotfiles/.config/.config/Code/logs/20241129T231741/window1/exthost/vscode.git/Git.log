@@ -1,0 +1,62 @@
+2024-11-29 23:17:43.906 [info] [main] Log level: Info
+2024-11-29 23:17:43.906 [info] [main] Validating found git in: "git"
+2024-11-29 23:17:43.906 [info] [main] Using git "2.43.0" from "git"
+2024-11-29 23:17:43.906 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-29 23:17:43.906 [info] > git rev-parse --show-toplevel [8ms]
+2024-11-29 23:17:43.922 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-29 23:17:43.933 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-11-29 23:17:43.943 [info] [Model][openRepository] Opened repository: /home/_3xay/Documents/Github/riceathon
+2024-11-29 23:17:43.978 [info] > git rev-parse --show-toplevel [11ms]
+2024-11-29 23:17:43.982 [info] > git config --get commit.template [22ms]
+2024-11-29 23:17:43.990 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-29 23:17:44.006 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [16ms]
+2024-11-29 23:17:44.008 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-29 23:17:44.050 [info] > git status -z -uall [13ms]
+2024-11-29 23:17:44.050 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-11-29 23:17:44.068 [info] > git rev-parse --show-toplevel [52ms]
+2024-11-29 23:17:44.070 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (1), parent repositories (0), unsafe repositories (0)
+2024-11-29 23:17:44.078 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [13ms]
+2024-11-29 23:17:44.085 [info] > git config --get commit.template [9ms]
+2024-11-29 23:17:44.088 [info] > git config --local branch.main.vscode-merge-base [10ms]
+2024-11-29 23:17:44.123 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [29ms]
+2024-11-29 23:17:44.153 [info] > git merge-base refs/heads/main refs/remotes/origin/main [23ms]
+2024-11-29 23:17:44.160 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [37ms]
+2024-11-29 23:17:44.169 [info] > git diff --name-status -z --diff-filter=ADMR e2a95a217d0248ccf729f3273bd3b4f286e45446...refs/remotes/origin/main [9ms]
+2024-11-29 23:17:44.238 [info] > git status -z -uall [56ms]
+2024-11-29 23:17:44.239 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [50ms]
+2024-11-29 23:17:44.277 [info] > git show --textconv :blahblah.txt [8ms]
+2024-11-29 23:17:44.279 [info] > git ls-files --stage -- /home/_3xay/Documents/Github/riceathon/blahblah.txt [4ms]
+2024-11-29 23:17:44.288 [info] > git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 [3ms]
+2024-11-29 23:17:44.487 [info] > git check-ignore -v -z --stdin [2ms]
+2024-11-29 23:17:45.176 [info] > git rev-parse --show-toplevel [1ms]
+2024-11-29 23:18:33.355 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-29 23:18:42.339 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-29 23:18:58.785 [info] > git rev-parse --show-toplevel [8ms]
+2024-11-29 23:19:01.815 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-29 23:19:04.921 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-29 23:19:07.464 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-29 23:19:12.170 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-29 23:19:14.919 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-29 23:19:17.784 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-29 23:19:20.290 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-29 23:19:45.356 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-29 23:19:45.378 [info] > git rev-parse --show-toplevel [7ms]
+2024-11-29 23:19:58.495 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-29 23:20:17.835 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-30 20:50:36.143 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-30 20:54:43.314 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-30 21:14:21.434 [info] [main] Log level: Info
+2024-11-30 21:14:21.434 [info] [main] Validating found git in: "git"
+2024-11-30 21:14:21.434 [info] [main] Using git "2.43.0" from "git"
+2024-11-30 21:14:21.434 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-30 21:14:21.434 [info] > git rev-parse --show-toplevel [0ms]
+2024-11-30 21:14:21.434 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-30 21:14:21.434 [info] > git rev-parse --show-toplevel [0ms]
+2024-11-30 21:14:21.434 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-30 21:14:21.434 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-30 21:14:23.536 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-30 21:14:23.537 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-30 21:14:25.671 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-30 21:14:25.671 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-30 21:21:06.631 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-30 21:21:06.631 [info] fatal: not a git repository (or any of the parent directories): .git

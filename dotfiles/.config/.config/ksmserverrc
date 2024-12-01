@@ -1,0 +1,21 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+clientMachine1=localhost
+command1=firefox
+count=1
+
+[Session: saved at previous logout]
+clientId1=1033786179000173301988600000013850006
+clientId2=1033786179000173301914800000013700037
+count=2
+discardCommand2[$e]=rm,$HOME/.config/session/konsole_1033786179000173301914800000013700037_1733019930_481526
+program1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier
+program2=/usr/bin/konsole
+restartCommand1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,1033786179000173301988600000013850006_1733019930_481526
+restartCommand2=/usr/bin/konsole,-session,1033786179000173301914800000013700037_1733019930_481526
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=_3xay
+userId2=_3xay
