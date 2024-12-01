@@ -128,5 +128,14 @@
     "name": "3XAY",
     "distro": "Kubuntu",
     "git": "https://github.com/3XAY/tree/3xay/"
+  }, {
+    "name": "leahcodes101",
+    "distro": "arch",
+    "git": "https://github.com/OtterCodes101/dotfiles"
+  },
+  {
+    "name": "headblockhead",
+    "distro": "nixos",
+    "git": "https://github.com/headblockhead/dotfiles"
   }
 ]
