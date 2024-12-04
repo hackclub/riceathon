@@ -139,4 +139,9 @@
     "distro": "nixos",
     "git": "https://github.com/headblockhead/dotfiles"
   }
+    {
+    "name": "smol-xuan",
+    "distro": "arch",
+    "git": "https://github.com/CattoYT/fuxuan-dots"
+  }
 ]
