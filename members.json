@@ -143,5 +143,10 @@
     "name": "smol-xuan",
     "distro": "arch",
     "git": "https://github.com/CattoYT/fuxuan-dots"
+  },
+  {
+    "name": "A Badly Drawn Wobbler",
+    "distro": "nixos",
+    "git": "https://github.com/suyashtnt/commafiles"
   }
 ]
