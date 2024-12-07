@@ -143,5 +143,10 @@
     "name": "smol-xuan",
     "distro": "arch",
     "git": "https://github.com/CattoYT/fuxuan-dots"
+  },
+  {
+    "name": "Yoav Mlotok",
+    "distro": "arch",
+    "git": "https://github.com/yoavmlotok/cat-rice"
   }
 ]
