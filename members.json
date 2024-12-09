@@ -149,6 +149,7 @@
     "distro": "arch",
     "git": "https://github.com/yoavmlotok/cat-rice"
   },
+  {
     "name": "bean1134",
     "distro": "fedora",
     "git": "https://github.com/bento1134/dotfiles"
