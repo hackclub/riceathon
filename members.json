@@ -158,5 +158,10 @@
     "name": "A Badly Drawn Wobbler",
     "distro": "nixos",
     "git": "https://github.com/suyashtnt/commafiles"
-  }
+  },
+  {
+    "name": "sophia0805",
+    "distro": "ubuntu",
+    "git": "https://github.com/sophia0805/linux-rice"
+  },
 ]
