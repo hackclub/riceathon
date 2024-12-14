@@ -163,5 +163,10 @@
     "name": "sophia0805",
     "distro": "ubuntu",
     "git": "https://github.com/sophia0805/linux-rice"
+  },
+  {
+    "name": "udontur",
+    "distro": "arch",
+    "git": "https://github.com/udontur/hyprland"
   }
 ]
