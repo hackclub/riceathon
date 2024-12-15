@@ -168,5 +168,10 @@
     "name": "ComputingSquid",
     "distro": "ubuntu",
     "git": "https://github.com/ProbablyComputingSquid/plasmaconfig"
+  },
+  {
+    "name": "udontur",
+    "distro": "arch",
+    "git": "https://github.com/udontur/hyprland"
   }
 ]
