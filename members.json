@@ -173,5 +173,10 @@
     "name": "udontur",
     "distro": "arch",
     "git": "https://github.com/udontur/hyprland"
+  },
+  {
+    "name": "ShibamRoy9826",
+    "distro": "arch",
+    "git": "https://github.com/ShibamRoy9826/qt_tile"
   }
 ]
