@@ -183,5 +183,10 @@
     "name": "UnnaturalTwilight",
     "distro": "arch",
     "git": "https://github.com/UnnaturalTwilight/Chaos-DotFiles"
+  },
+  {
+    "name": "thecashmoney",
+    "distro": "arch",
+    "git": "https://github.com/thecashmoney/dotfiles"
   }
 ]
