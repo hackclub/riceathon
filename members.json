@@ -183,10 +183,15 @@
     "name": "UnnaturalTwilight",
     "distro": "arch",
     "git": "https://github.com/UnnaturalTwilight/Chaos-DotFiles"
-  }
+  },
   {
     "name": "ashheartz",
     "distro": "endeavouros",
     "git": "https://github.com/ashheartz/i3rice/"
+  },
+  {
+    "name": "thecashmoney",
+    "distro": "arch",
+    "git": "https://github.com/thecashmoney/dotfiles"
   }
 ]
