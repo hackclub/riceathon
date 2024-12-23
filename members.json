@@ -5,6 +5,11 @@
     "git": "https://github.com/ILikeMice/firstrice"
   },
   {
+    "name": "PonderSlime",
+    "distro": "mint",
+    "git": "https://github.com/PonderSlime/Norse---Linux-Mint-Rice/"
+  },
+  {
     "name": "Volkov",
     "distro": "arch",
     "git": "https://github.com/Volkov08/firstricedots"
