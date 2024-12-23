@@ -193,5 +193,10 @@
     "name": "thecashmoney",
     "distro": "arch",
     "git": "https://github.com/thecashmoney/dotfiles"
+  },
+  {
+    "name": "gbtsui",
+    "distro": "arch",
+    "git": "https://github.com/gbtsui/.config"
   }
 ]
