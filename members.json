@@ -193,5 +193,10 @@
     "name": "thecashmoney",
     "distro": "arch",
     "git": "https://github.com/thecashmoney/dotfiles"
-  }
+  },
+  {
+    "name": "stay_at_home",
+    "distro": "endeavouros",
+    "git": "https://github.com/mzums/arch-i3wm-rice"
+  } 
 ]
