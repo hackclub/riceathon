@@ -5,6 +5,11 @@
     "git": "https://github.com/ILikeMice/firstrice"
   },
   {
+    "name": "PonderSlime",
+    "distro": "mint",
+    "git": "https://github.com/PonderSlime/Norse---Linux-Mint-Rice/"
+  },
+  {
     "name": "Volkov",
     "distro": "arch",
     "git": "https://github.com/Volkov08/firstricedots"
@@ -157,7 +162,7 @@
   {
     "name": "A Badly Drawn Wobbler",
     "distro": "nixos",
-    "git": "https://github.com/suyashtnt/commafiles"
+    "git": "https://github.com/Suya1671/commafiles"
   },
   {
     "name": "sophia0805",
@@ -198,5 +203,19 @@
     "name": "mzums",
     "distro": "endeavouros",
     "git": "https://github.com/mzums/arch-i3wm-rice"
-  } 
+  }, {
+    "name": "gbtsui",
+    "distro": "arch",
+    "git": "https://github.com/gbtsui/.config"
+  },
+  {
+    "name": "ShreyShingala",
+    "distro": "Mint",
+    "git": "https://github.com/ShreyShingala/Lotr-Rice"
+  },
+  {
+    "name": "roxwize",
+    "distro": "nixos",
+    "git": "https://git.sr.ht/~roxwize/.dotfiles"
+  }
 ]
