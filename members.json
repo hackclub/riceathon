@@ -213,5 +213,10 @@
     "name": "roxwize",
     "distro": "nixos",
     "git": "https://git.sr.ht/~roxwize/.dotfiles"
+  },
+  {
+    "name": "Hibernathan1212",
+    "distro": "fedora",
+    "git": "https://github.com/Hibernathan1212/dotfiles"
   }
 ]
