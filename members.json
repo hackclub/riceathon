@@ -157,7 +157,7 @@
   {
     "name": "A Badly Drawn Wobbler",
     "distro": "nixos",
-    "git": "https://github.com/suyashtnt/commafiles"
+    "git": "https://github.com/Suya1671/commafiles"
   },
   {
     "name": "sophia0805",
@@ -198,5 +198,13 @@
     "name": "gbtsui",
     "distro": "arch",
     "git": "https://github.com/gbtsui/.config"
+  }, {
+    "name": "ShreyShingala",
+    "distro": "Mint",
+    "https://github.com/ShreyShingala/Lotr-Rice"
+  }, {
+    "name": "roxwize",
+    "distro": "nixos",
+    "git": "https://git.sr.ht/~roxwize/.dotfiles"
   }
 ]
