@@ -198,5 +198,9 @@
     "name": "ShreyShingala",
     "distro": "Mint",
     "https://github.com/ShreyShingala/Lotr-Rice"
+  }, {
+    "name": "roxwize",
+    "distro": "nixos",
+    "git": "https://git.sr.ht/~roxwize/.dotfiles"
   }
 ]
