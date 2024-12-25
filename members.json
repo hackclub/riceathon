@@ -228,5 +228,10 @@
     "name": "Pegoku",
     "distro": "arch",
     "git": "https://github.com/Pegoku/dotfiles"
+  },
+  {
+    "name": "nulladmin1",
+    "distro": "nixos",
+    "git": "https://github.com/nulladmin1/nixos-config"
   }
 ]
