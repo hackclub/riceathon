@@ -228,5 +228,10 @@
     "name": "Pegoku",
     "distro": "arch",
     "git": "https://github.com/Pegoku/dotfiles"
+  },
+  {
+    "name": "barab",
+    "distro": "arch",
+    "git": "https://github.com/Baraban511/brice"
   }
 ]
