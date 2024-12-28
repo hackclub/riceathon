@@ -233,5 +233,9 @@
     "name": "Hibernathan1212",
     "distro": "fedora",
     "git": "https://github.com/Hibernathan1212/dotfiles"
+  },{
+    "name": "barab",
+    "distro": "arch",
+    "git": "https://github.com/Baraban511/brice"
   }
 ]
