@@ -238,5 +238,10 @@
     "name": "barab",
     "distro": "arch",
     "git": "https://github.com/Baraban511/brice"
+  },
+  {
+    "name": "i-suck-at-most-stuff",
+    "distro": "mint",
+    "git": "https://github.com/i-suck-at-most-stuff/hackclub-riceathon"
   }
 ]
