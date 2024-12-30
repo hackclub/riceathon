@@ -233,5 +233,19 @@
     "name": "nulladmin1",
     "distro": "nixos",
     "git": "https://github.com/nulladmin1/nixos-config"
+  }, {
+    "name": "Hibernathan1212",
+    "distro": "fedora",
+    "git": "https://github.com/Hibernathan1212/dotfiles"
+  },
+  {
+    "name": "barab",
+    "distro": "arch",
+    "git": "https://github.com/Baraban511/brice"
+  },
+  {
+    "name": "DaInfLoop",
+    "distro": "ubuntu",
+    "git": "https://github.com/DaInfLoop/dotfiles"
   }
 ]
