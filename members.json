@@ -400,6 +400,10 @@
   {
     "name": "luxecat",
     "distro": "macos",
-    "git": "https://github.com/luxecat/dots"
+    "git": "https://github.com/luxecat/dots",
+    "images": [
+      "https://cloud-a8tsourf8-hack-club-bot.vercel.app/0screenshot_2024-12-31_at_4.43.39___pm.png",
+      "https://cloud-a8tsourf8-hack-club-bot.vercel.app/1screenshot_2024-12-31_at_3.53.53___pm.png"
+    ]
   }
 ]
