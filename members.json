@@ -396,5 +396,10 @@
     "distro": "mint",
     "git": "https://github.com/i-suck-at-most-stuff/hackclub-riceathon",
     "images": ["https://cloud-jmubo3oer-hack-club-bot.vercel.app/0image.png"]
+  },
+  {
+    "name": "luxecat",
+    "distro": "macos",
+    "git": "https://github.com/luxecat/dots"
   }
 ]
