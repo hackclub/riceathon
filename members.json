@@ -407,3 +407,10 @@
     ]
   }
 ]
+{
+    "name": "opott",
+    "distro": "mint",
+    "git": "https://github.com/opott/dotfiles",
+    "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"]
+  },
+  {
