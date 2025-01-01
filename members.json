@@ -405,12 +405,11 @@
       "https://cloud-a8tsourf8-hack-club-bot.vercel.app/0screenshot_2024-12-31_at_4.43.39___pm.png",
       "https://cloud-a8tsourf8-hack-club-bot.vercel.app/1screenshot_2024-12-31_at_3.53.53___pm.png"
     ]
-  }
-]
-{
+  },
+  {
     "name": "opott",
     "distro": "mint",
     "git": "https://github.com/opott/dotfiles",
     "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"]
-  },
-  {
+    }
+]
