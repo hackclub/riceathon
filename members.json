@@ -411,5 +411,13 @@
     "distro": "mint",
     "git": "https://github.com/opott/dotfiles",
     "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"]
+  },
+    {
+    "name": "bojanradjenovic",
+    "distro": "debian",
+    "git": "https://github.com/bojanradjenovic/dotfiles",
+    "images": [
+    "https://cloud-rhok0jbjf-hack-club-bot.vercel.app/0image.png", 
+    "https://cloud-iug76tuhk-hack-club-bot.vercel.app/0image.png"]
   }
 ]
