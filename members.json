@@ -1,5 +1,13 @@
 [
   {
+    "name": "mo8codes",
+    "distro": "nixos",
+    "git": "https://github.com/mo8codes/gnome-rices.nix",
+    "images": [
+      "https://cloud-1ku38mm2c-hack-club-bot.vercel.app/0image.png"
+    ]
+  },
+  {
     "name": "neongamerbot-qk",
     "distro": "nixos",
     "git": "https://github.com/NeonGamerBot-QK/nixos",
