@@ -411,5 +411,14 @@
     "distro": "mint",
     "git": "https://github.com/opott/dotfiles",
     "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"]
+  },
+  {
+    "name": "hash-ak",
+    "distro": "ubuntu",
+    "git": "https://github.com/Hash-AK/Hash-AK-First-Rice",
+    "images": [
+      "https://github.com/Hash-AK/Hash-AK-First-Rice/raw/main/2025-01-03-102442_hyprshot.png",
+      "https://github.com/Hash-AK/Hash-AK-First-Rice/raw/main/2025-01-03-103215_hyprshot.png"
+    ]
   }
 ]
