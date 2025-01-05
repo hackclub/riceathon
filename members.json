@@ -411,5 +411,14 @@
     "distro": "mint",
     "git": "https://github.com/opott/dotfiles",
     "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"]
+  },
+  {
+    "name": "hex4",
+    "distro": "nixos",
+    "git": "https://github.com/Hex-4/nixos",
+    "images": [
+      "https://cloud-j61adq7yu-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-btrl1ldyf-hack-club-bot.vercel.app/0image.png"
+    ]
   }
 ]
