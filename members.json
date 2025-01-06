@@ -412,7 +412,21 @@
     "git": "https://github.com/opott/dotfiles",
     "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"]
   },
+   {
+    "name": "bojanradjenovic",
+    "distro": "debian",
+    "git": "https://github.com/bojanradjenovic/dotfiles",
+    "images": [
+      "https://cloud-rhok0jbjf-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-iug76tuhk-hack-club-bot.vercel.app/0image.png"
+    ]
+  },
   {
+    "name": "genr234",
+    "distro": "macos",
+    "git": "https://github.com/genr234/dotfiles/tree/main",
+    "images": ["https://cloud-6lxdyetfe-hack-club-bot.vercel.app/0image.png"]
+  },{
     "name": "hash-ak",
     "distro": "ubuntu",
     "git": "https://github.com/Hash-AK/Hash-AK-First-Rice",
