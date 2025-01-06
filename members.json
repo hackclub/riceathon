@@ -419,5 +419,11 @@
     "images": [
     "https://cloud-rhok0jbjf-hack-club-bot.vercel.app/0image.png", 
     "https://cloud-iug76tuhk-hack-club-bot.vercel.app/0image.png"]
+}, 
+  {
+    "name": "genr234",
+    "distro": "macos",
+    "git": "https://github.com/genr234/dotfiles/tree/main",
+    "images": ["https://cloud-6lxdyetfe-hack-club-bot.vercel.app/0image.png"]
   }
 ]
