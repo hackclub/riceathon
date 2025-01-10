@@ -557,5 +557,11 @@
     "distro": "fedora",
     "git": "https://github.com/transcental/dotfiles",
     "images": ["https://cloud-lgc673ndr-hack-club-bot.vercel.app/0image.png"]
+  },
+  {
+    "name": "piotrus rice",
+    "distro": "arch",
+    "git": "https://github.com/piter231/i3/",
+    "images": ["https://cloud-fmlkf8yf6-hack-club-bot.vercel.app/0example.png"]
   }
 ]
