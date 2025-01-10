@@ -545,5 +545,13 @@
     "images": [
       "https://cloud-mqc2ek8p6-hack-club-bot.vercel.app/0screenshot_from_2025-01-10_22-25-53.png"
     ]
+  },
+  {
+    "name": "amber's dots",
+    "distro": "fedora",
+    "git": "https://github.com/transcental/dotfiles",
+    "images": [
+      "https://cloud-lgc673ndr-hack-club-bot.vercel.app/0image.png"
+    ]
   }
 ]
