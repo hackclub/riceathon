@@ -620,5 +620,13 @@
       "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo5.png"
     ],
     "git": "https://github.com/Glitch752/NixOSConfiguration"
+  },
+  {
+    "name": "BaconWaffleDonut",
+    "distro": "arch",
+    "git": "https://github.com/BaconWaffleDonut/arch-dotfiles.git",
+    "images": [
+      "https://github.com/BaconWaffleDonut/arch-dotfiles/blob/1d861de63604310c81a2f15e6674c1d2aba6276c/image0.jpeg"
+    ]
   }
 ]
