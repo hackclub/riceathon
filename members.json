@@ -584,5 +584,21 @@
     "distro": "Archcraft",
     "git": "https://github.com/RealStr1ke/dotfiles",
     "images": ["https://cloud-2lfwq8w7e-hack-club-bot.vercel.app/0hackclub-riceathon-showcase-winter-2024.png"]
+  },
+  {
+    "name": "pmnlla-nixos",
+    "distro": "nixos",
+    "git": "https://github.com/pmnlla/riceathon",
+    "images": [
+      "https://cloud-906ar2tca-hack-club-bot.vercel.app/01000004161.webp"
+    ]
+  },
+  {
+    "name": "ByteAtATime",
+    "distro": "arch",
+    "git": "https://github.com/ByteAtATime/dotfiles",
+    "images": [
+      "https://cloud-3s51005uc-hack-club-bot.vercel.app/02025-01-09_19-01-1736478659.png"
+    ]
   }
 ]
