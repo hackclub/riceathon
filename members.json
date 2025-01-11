@@ -604,6 +604,11 @@
     ]
   },
   {
+    "name": "gusruben",
+    "distro": "arch",
+    "git": "https://github.com/gusruben/sushi-dotfiles",
+    "images": ["https://i.imgur.com/XO4Qpcj.png"]
+  },   {
     "name": "brody-nixos",
     "distro": "nixos",
     "images": [
