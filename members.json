@@ -557,5 +557,11 @@
     "distro": "fedora",
     "git": "https://github.com/transcental/dotfiles",
     "images": ["https://cloud-lgc673ndr-hack-club-bot.vercel.app/0image.png"]
+  },
+  {
+    "name": "Tileryr",
+    "distro": "arch",
+    "git": "https://github.com/Tileryr/arch-rice-config",
+    "images": ["https://cloud-6rcnsjj8l-hack-club-bot.vercel.app/0250110_20h51m51s_screenshot.png", "https://cloud-pmjksxhpj-hack-club-bot.vercel.app/0250110_20h48m35s_screenshot.png"]
   }
 ]
