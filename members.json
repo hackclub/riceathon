@@ -602,5 +602,17 @@
     "images": [
       "https://cloud-3s51005uc-hack-club-bot.vercel.app/02025-01-09_19-01-1736478659.png"
     ]
-  }
+  },
+  {
+    "name": "brody-nixos",
+    "distro": "nixos",
+    "images": [
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo1.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo2.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo3.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo4.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo5.png"
+    ],
+    "git": "https://github.com/Glitch752/NixOSConfiguration"
+  },
 ]
