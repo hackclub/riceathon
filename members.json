@@ -602,5 +602,13 @@
     "images": [
       "https://cloud-3s51005uc-hack-club-bot.vercel.app/02025-01-09_19-01-1736478659.png"
     ]
+  },
+  {
+    "name": "gusruben",
+    "distro": "arch",
+    "git": "https://github.com/gusruben/sushi-dotfiles",
+    "images": [
+      "https://i.imgur.com/XO4Qpcj.png"
+    ]
   }
 ]
