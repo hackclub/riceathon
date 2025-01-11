@@ -580,5 +580,10 @@
     "distro": "arch",
     "git": "https://github.com/piter231/i3/",
     "images": ["https://cloud-fmlkf8yf6-hack-club-bot.vercel.app/0example.png"]
-  }
+  },
+  {
+    "name": "pmnlla-nixos",
+    "distro": "nixos",
+    "git": "https://github.com/pmnlla/riceathon",
+    "images": ["https://imgur.com/a/QqWXZE0"]
 ]
