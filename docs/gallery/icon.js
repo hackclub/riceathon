@@ -1,6 +1,6 @@
 function setupIcon(iconf, el) {
   const icon = document.createElement("img");
-  icon.src = "./gallery/icons/" + iconf + ".png";
+  icon.src = "./gallery/icons/" + iconf.toLowerCase() + ".png";
   // icon.width = "20px"
   // icon.height = "20px"
   // icon.style.width = "40px";

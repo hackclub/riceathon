@@ -211,7 +211,6 @@
       "https://cloud-61b3wmj3h-hack-club-bot.vercel.app/0image.png"
     ]
   },
-
   {
     "name": "smol-xuan",
     "distro": "arch",
@@ -224,7 +223,6 @@
     "git": "https://github.com/bento1134/dotfiles",
     "images": ["https://cloud-l0c54m3qm-hack-club-bot.vercel.app/0image.png"]
   },
-
   {
     "name": "Yoav Mlotok",
     "distro": "arch",
@@ -526,7 +524,7 @@
   },
   {
     "name": "Knaifu",
-    "distro": "endaevour",
+    "distro": "endeavouros",
     "git": "https://github.com/Knaifu0030/catinux",
     "images": ["https://i.imgur.com/AL8G39q.png"]
   },
@@ -560,7 +558,7 @@
   },
   {
     "name": "joshWM (not actually a rice)",
-    "distro": "anything with x11",
+    "distro": "x11",
     "git": "https://github.com/hotcocoaNcode/joshwm",
     "images": [
       "https://cloud-r7ij49zc9-hack-club-bot.vercel.app/0screenshot_2024-11-26_at_12.35.19___am.png"
@@ -586,5 +584,12 @@
     "distro": "nixos",
     "git": "https://github.com/pmnlla/riceathon",
     "images": ["https://cloud-906ar2tca-hack-club-bot.vercel.app/01000004161.webp"]
+}, {
+    "name": "ByteAtATime",
+    "distro": "arch",
+    "git": "https://github.com/ByteAtATime/dotfiles",
+    "images": [
+      "https://cloud-3s51005uc-hack-club-bot.vercel.app/02025-01-09_19-01-1736478659.png"
+    ]
   }
 ]
