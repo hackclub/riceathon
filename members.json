@@ -559,18 +559,15 @@
     "images": ["https://cloud-lgc673ndr-hack-club-bot.vercel.app/0image.png"]
   },
   {
-    "name": "Tileryr",
-    "distro": "arch",
-    "git": "https://github.com/Tileryr/arch-rice-config",
-    "images": [
-      "https://cloud-6rcnsjj8l-hack-club-bot.vercel.app/0250110_20h51m51s_screenshot.png",
-      "https://cloud-pmjksxhpj-hack-club-bot.vercel.app/0250110_20h48m35s_screenshot.png"
-    ]
-  },
-  {
     "name": "piotrus rice",
     "distro": "arch",
     "git": "https://github.com/piter231/i3/",
     "images": ["https://cloud-fmlkf8yf6-hack-club-bot.vercel.app/0example.png"]
+  },
+  {
+    "name": "ByteAtATime",
+    "distro": "arch",
+    "git": "https://github.com/ByteAtATime/dotfiles",
+    "images": ["https://cloud-3s51005uc-hack-club-bot.vercel.app/02025-01-09_19-01-1736478659.png"]
   }
 ]
