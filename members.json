@@ -578,5 +578,11 @@
     "distro": "arch",
     "git": "https://github.com/piter231/i3/",
     "images": ["https://cloud-fmlkf8yf6-hack-club-bot.vercel.app/0example.png"]
+  },
+  {
+    "name": "RealStr1ke's ~/.dotfiles",
+    "distro": "Archcraft",
+    "git": "https://github.com/RealStr1ke/dotfiles",
+    "images": ["https://cloud-2lfwq8w7e-hack-club-bot.vercel.app/0hackclub-riceathon-showcase-winter-2024.png"]
   }
 ]
