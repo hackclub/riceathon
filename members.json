@@ -701,5 +701,14 @@
     ],
     "git": "https://github.com/Glitch752/NixOSConfiguration",
     "version": 1
+  },
+  {
+    "name": "Robust orange",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/Iviv122/Rice/refs/heads/master/assets/screenshot.26.jpg"
+    ],
+    "git": "https://github.com/Iviv122/Rice",
+    "version": 1
   }
 ]
