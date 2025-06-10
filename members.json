@@ -701,5 +701,15 @@
     ],
     "git": "https://github.com/Glitch752/NixOSConfiguration",
     "version": 1
+  },
+  {
+    "name": "It just works™",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/Sylviettee/dotfiles/refs/heads/main/assets/screenshot1.png",
+      "https://raw.githubusercontent.com/Sylviettee/dotfiles/refs/heads/main/assets/screenshot2.png"
+    ],
+    "git": "https://github.com/Sylviettee/dotfiles",
+    "version": 2
   }
 ]
