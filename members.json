@@ -720,5 +720,15 @@
     ],
     "git": "https://github.com/Sylviettee/dotfiles",
     "version": 2
+  },
+  {
+    "name": "Dystopia2",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/TuinboonDev/dystopia2/refs/heads/main/assets/nf.png",
+      "https://raw.githubusercontent.com/TuinboonDev/dystopia2/refs/heads/main/assets/wofi.png"
+    ],
+    "git": "https://github.com/TuinboonDev/dystopia2/",
+    "version": 2
   }
 ]
