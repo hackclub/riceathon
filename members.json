@@ -730,5 +730,14 @@
     ],
     "git": "https://github.com/TuinboonDev/dystopia2/",
     "version": 2
+  },
+  {
+    "name": "virtualfuzz",
+    "distro": "cachyos",
+    "images": [
+      "https://codeberg.org/virtualfuzz/hyprdot/media/branch/main/screenshot.webp"
+    ],
+    "git": "https://codeberg.org/virtualfuzz/hyprdot",
+    "version": 2
   }
 ]
