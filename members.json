@@ -739,5 +739,14 @@
     ],
     "git": "https://codeberg.org/virtualfuzz/hyprdot",
     "version": 2
-  }
+  },
+  {
+    "name": "cid's hyprland rice",
+    "distro": "fedora",
+    "images": [
+      "https://raw.githubusercontent.com/thisiscid/dotfiles-riceathon/refs/heads/main/demo-1.png"
+    ],
+    "git": "https://github.com/thisiscid/dotfiles-riceathon",
+    "version": 1
+  },
 ]
