@@ -758,5 +758,14 @@
     ],
     "git": "https://github.com/soap-phia/arch-rice/",
     "version": 2
-  }
+  },
+  {
+    "name": "Dan (Z)'s Rice",
+    "distro": "ubuntu",
+    "images": [
+      "https://github.com/justdanielndev/rice/blob/main/demo.png?raw=true"
+    ],
+    "git": "https://github.com/justdanielndev/rice",
+    "version": 2
+  },
 ]
