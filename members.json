@@ -787,5 +787,14 @@
     ],
     "git": "https://github.com/Glitch752/dotfiles",
     "version": 2
+  },
+  {
+    "name": ":3",
+    "distro": "macos :(",
+    "images": [
+      "https://github.com/finnnnnnnnnnnnnnnnn/rice/blob/main/Screenshot%202025-06-22%20at%201.58.04%E2%80%AFPM.png?raw=true",
+    ],
+    "git": "https://github.com/finnnnnnnnnnnnnnnnn/rice",
+    "version": 1
   }
 ]
