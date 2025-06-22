@@ -787,5 +787,14 @@
     ],
     "git": "https://github.com/Glitch752/dotfiles",
     "version": 2
+  },
+  {
+    "name": "askiiart",
+    "distro": "fedora",
+    "images": [
+      "https://raw.githubusercontent.com/askiiart-s-self-forks/niri-dotfiles/main/screenshot.png"
+    ],
+    "git": "https://github.com/askiiart-s-self-forks/niri-dotfiles",
+    "version": 2
   }
 ]
