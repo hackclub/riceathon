@@ -777,5 +777,15 @@
     ],
     "git": "https://github.com/sophia0805/ocean-dotfiles",
     "version": 2
+  },
+  {
+    "name": "cosmic arch theme",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/Glitch752/dotfiles/refs/heads/master/images/screenshot1.png",
+      "https://raw.githubusercontent.com/Glitch752/dotfiles/refs/heads/master/images/screenshot2.png"
+    ],
+    "git": "https://github.com/Glitch752/dotfiles",
+    "version": 2
   }
 ]
