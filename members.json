@@ -796,7 +796,8 @@
     ],
     "git": "https://github.com/askiiart-s-self-forks/niri-dotfiles",
     "version": 2
-}, {
+  },
+  {
     "name": "junyali's dotfiles",
     "distro": "endeavouros",
     "images": [
