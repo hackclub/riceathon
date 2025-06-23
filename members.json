@@ -794,7 +794,25 @@
     "images": [
       "https://github.com/finnnnnnnnnnnnnnnnn/rice/blob/main/Screenshot%202025-06-22%20at%201.58.04%E2%80%AFPM.png?raw=true",
     ],
+    "version": 2
     "git": "https://github.com/finnnnnnnnnnnnnnnnn/rice",
+  }, {
+    "name": "askiiart",
+    "distro": "fedora",
+    "images": [
+      "https://raw.githubusercontent.com/askiiart-s-self-forks/niri-dotfiles/main/screenshot.png"
+    ],
+    "git": "https://github.com/askiiart-s-self-forks/niri-dotfiles",
+    "version": 2
+  },
+  {
+    "name": "junyali's dotfiles",
+    "distro": "endeavouros",
+    "images": [
+      "https://github.com/junyali/dotfiles/blob/master/demo-1.png?raw=true",
+      "https://github.com/junyali/dotfiles/blob/master/demo-2.png?raw=true"
+    ],
+    "git": "https://github.com/junyali/dotfiles",
     "version": 2
   }
 ]
