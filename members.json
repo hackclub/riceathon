@@ -814,5 +814,14 @@
     ],
     "git": "https://github.com/junyali/dotfiles",
     "version": 2
+  },
+  {
+    "name": "miku rice",
+    "distro": "arch",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/79103099fb0b488439eda53d762d845dc1578783_image.png"
+    ],
+    "git": "https://github.com/StatusCritical/.config/experimental",
+    "version": 2
   }
 ]
