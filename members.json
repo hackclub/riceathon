@@ -816,3 +816,15 @@
     "version": 2
   }
 ]
+[
+  {
+    "name": "manni's dotfiles",
+    "distro": "fedora asahi",
+    "git": "https://github.com/mannireis/dotfiles",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/552794e0bedb5f05175d0f70b7b2f622ee07eae2_screenshot_2025-06-26_12_13_07.png"
+      "https://files.slack.com/files-tmb/T0266FRGM-F0936HDCF42-6cfa19d5be/screenshot_2025-06-26_12_13_10_720.png"
+      "https://files.slack.com/files-pri/T0266FRGM-F0936HD3A1G/screenshot_2025-06-26_12_14_19.png"
+    ],
+    "version": 1
+  },
