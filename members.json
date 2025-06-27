@@ -820,10 +820,11 @@
     "distro": "fedora asahi",
     "git": "https://github.com/mannireis/dotfiles",
     "images": [
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/552794e0bedb5f05175d0f70b7b2f622ee07eae2_screenshot_2025-06-26_12_13_07.png"
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/13ecfd6ff0911be38d4504e7a0d10ac1aef2b78c_screenshot_2025-06-26_12_14_19.png"
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/8498d596a90885ef3dbac1a45f46c1247e9f7b3c_screenshot_2025-06-26_12_14_01.png"
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/552794e0bedb5f05175d0f70b7b2f622ee07eae2_screenshot_2025-06-26_12_13_07.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/13ecfd6ff0911be38d4504e7a0d10ac1aef2b78c_screenshot_2025-06-26_12_14_19.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/8498d596a90885ef3dbac1a45f46c1247e9f7b3c_screenshot_2025-06-26_12_14_01.png",
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/722e642575da37fb6a9c3993210b507fbc8ab2f2_screenshot_2025-06-26_12_13_10.png"
     ],
     "version": 2
   }
+]
