@@ -814,9 +814,7 @@
     ],
     "git": "https://github.com/junyali/dotfiles",
     "version": 2
-  }
-]
-[
+  },
   {
     "name": "manni's dotfiles",
     "distro": "fedora asahi",
@@ -828,4 +826,4 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/722e642575da37fb6a9c3993210b507fbc8ab2f2_screenshot_2025-06-26_12_13_10.png"
     ],
     "version": 2
-  },
+  }
