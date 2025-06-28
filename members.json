@@ -826,5 +826,15 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/722e642575da37fb6a9c3993210b507fbc8ab2f2_screenshot_2025-06-26_12_13_10.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Yoav Mlotok's Rice",
+    "distro": "arch",
+    "git": "https://github.com/yoavmlotok/rice",
+    "images": [
+      "https://github.com/yoavmlotok/rice/blob/main/previews/usual.png",
+      "https://github.com/yoavmlotok/rice/blob/main/previews/menu.png"
+    ],
+    "version": 2
   }
 ]
