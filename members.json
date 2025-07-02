@@ -836,5 +836,15 @@
       "https://github.com/yoavmlotok/rice/blob/main/previews/menu.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Shibam's niri dotfiles",
+    "distro": "Arch",
+    "git": "https://github.com/ShibamRoy9826/niri-dotfiles",
+    "images": [
+       "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/1.png",
+       "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/2.png"
+    ],
+    "version": 2
   }
 ]
