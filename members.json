@@ -1,4 +1,18 @@
 [
+      {
+    "name": "Meharwan Singh",
+    "distro": "Fedora",
+    "git": "https://github.com/ThePikachuDev/riceathon",
+    "images": [
+      "https://github.com/ThePikachuDev/riceathon/blob/main/previews/darkScreen_fastfetch.png",
+      "https://github.com/ThePikachuDev/riceathon/blob/main/previews/lightScreen_fastfetch.png",
+      "https://github.com/ThePikachuDev/riceathon/blob/main/previews/kew_nvim.png",
+      "https://github.com/ThePikachuDev/riceathon/blob/main/previews/myOwn_Power_widget.png",
+      "https://raw.githubusercontent.com/ThePikachuDev/riceathon/refs/heads/main/previews/lock_screen.webp"
+
+    ],
+    "version": 1
+  },
   {
     "name": "neongamerbot-qk",
     "distro": "nixos",
