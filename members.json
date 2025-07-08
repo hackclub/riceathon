@@ -846,5 +846,15 @@
        "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/2.png"
     ],
     "version": 2
+  },
+  {
+    "name": "pbhak's rice",
+    "distro": "Arch",
+    "git": "https://github.com/pbhak/dotfiles",
+    "images": [
+      "https://github.com/pbhak/dotfiles/blob/master/screenshots/desktop.png",
+      "https://github.com/pbhak/dotfiles/blob/master/screenshots/screenshot1.png"
+    ],
+    "version": 2
   }
 ]
