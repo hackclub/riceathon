@@ -854,6 +854,17 @@
     "images": [
       "https://github.com/pbhak/dotfiles/blob/master/screenshots/desktop.png",
       "https://github.com/pbhak/dotfiles/blob/master/screenshots/screenshot1.png"
+],
+ "version": 2
+}, {
+    "name": "Some1's Hyprland Rice",
+    "distro": "Arch",
+    "git": "https://github.com/x-9917638/dotfiles"
+    "images": [
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot1.png",
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot2.png",
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
+
     ],
     "version": 2
   }
