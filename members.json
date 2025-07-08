@@ -854,6 +854,25 @@
     "images": [
        "https://github.com/user-attachments/assets/4d27c300-57d6-46b4-b6fc-787a4afcd1b7",
        "https://github.com/user-attachments/assets/c9f526ba-d5ff-41be-8211-8f142a8bc3aa"
+],
+ "version": 2
+  }, {
+    "name": "pbhak's rice",
+    "distro": "Arch",
+    "git": "https://github.com/pbhak/dotfiles",
+    "images": [
+      "https://github.com/pbhak/dotfiles/blob/master/screenshots/desktop.png",
+      "https://github.com/pbhak/dotfiles/blob/master/screenshots/screenshot1.png"
+],
+ "version": 2
+}, {
+    "name": "Some1's Hyprland Rice",
+    "distro": "Arch",
+    "git": "https://github.com/x-9917638/dotfiles"
+    "images": [
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot1.png",
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot2.png",
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
     ],
     "version": 2
   }
