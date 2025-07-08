@@ -846,5 +846,15 @@
        "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/2.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Ankush's niri dotfiles",
+    "distro": "Arch",
+    "git": "https://github.com/AnkushRoy-code/niri-dots",
+    "images": [
+       "https://github.com/user-attachments/assets/4d27c300-57d6-46b4-b6fc-787a4afcd1b7",
+       "https://github.com/user-attachments/assets/c9f526ba-d5ff-41be-8211-8f142a8bc3aa"
+    ],
+    "version": 2
   }
 ]
