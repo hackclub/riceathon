@@ -875,5 +875,12 @@
       "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
     ],
     "version": 2
+  }, {
+    "name": "strawberry rice cakes",
+    "distro": "endeavourOS",
+    "git": "https://github.com/strawberry-p/dotfiles",
+    "images": ["https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"
+    ],
+    "version": 1
   }
 ]
