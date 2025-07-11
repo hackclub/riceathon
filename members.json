@@ -875,5 +875,13 @@
       "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
     ],
     "version": 2
-  }
+  }, {
+      "name": "BomberFish's Simple i3 Rice",
+      "distro": "arch",
+      "git": "https://github.com/BomberFish/simple-i3-rice",
+      "images": [
+        "https://raw.githubusercontent.com/BomberFish/simple-i3-rice/master/screenshot.png"
+      ],
+      "version": 2
+    }
 ]
