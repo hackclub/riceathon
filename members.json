@@ -898,7 +898,7 @@
   { 
     "name": "Hash-AK's Spatial EndeavourOS Rice",
     "distro": "EndeavourOS",
-    "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles"
+    "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles",
     "images": [
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/cava-fastfetch-vim.png",
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/btop.png",
