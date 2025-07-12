@@ -909,5 +909,15 @@
       "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-14-19-29.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Cyrene Dotfiles",
+    "distro": "macos",
+    "git": "https://github.com/CattoYT/cyrene-dotfiles",
+    "images": [
+      "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.41.34.png?raw=true",
+      "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.50.31.png?raw=true"
+    ],
+    "version": 2
   }
 ]
