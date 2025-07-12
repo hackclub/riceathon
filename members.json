@@ -792,11 +792,12 @@
     "name": ":3",
     "distro": "macos :(",
     "images": [
-      "https://github.com/finnnnnnnnnnnnnnnnn/rice/blob/main/Screenshot%202025-06-22%20at%201.58.04%E2%80%AFPM.png?raw=true",
+      "https://github.com/finnnnnnnnnnnnnnnnn/rice/blob/main/Screenshot%202025-06-22%20at%201.58.04%E2%80%AFPM.png?raw=true"
     ],
-    "version": 2
-    "git": "https://github.com/finnnnnnnnnnnnnnnnn/rice",
-  }, {
+    "version": 2,
+    "git": "https://github.com/finnnnnnnnnnnnnnnnn/rice"
+  },
+  {
     "name": "askiiart",
     "distro": "fedora",
     "images": [
@@ -842,8 +843,8 @@
     "distro": "Arch",
     "git": "https://github.com/ShibamRoy9826/niri-dotfiles",
     "images": [
-       "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/1.png",
-       "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/2.png"
+      "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/1.png",
+      "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/2.png"
     ],
     "version": 2
   },
@@ -852,23 +853,25 @@
     "distro": "Arch",
     "git": "https://github.com/AnkushRoy-code/niri-dots",
     "images": [
-       "https://github.com/user-attachments/assets/4d27c300-57d6-46b4-b6fc-787a4afcd1b7",
-       "https://github.com/user-attachments/assets/c9f526ba-d5ff-41be-8211-8f142a8bc3aa"
-],
- "version": 2
-  }, {
+      "https://github.com/user-attachments/assets/4d27c300-57d6-46b4-b6fc-787a4afcd1b7",
+      "https://github.com/user-attachments/assets/c9f526ba-d5ff-41be-8211-8f142a8bc3aa"
+    ],
+    "version": 2
+  },
+  {
     "name": "pbhak's rice",
     "distro": "Arch",
     "git": "https://github.com/pbhak/dotfiles",
     "images": [
       "https://github.com/pbhak/dotfiles/blob/master/screenshots/desktop.png",
       "https://github.com/pbhak/dotfiles/blob/master/screenshots/screenshot1.png"
-],
- "version": 2
-}, {
+    ],
+    "version": 2
+  },
+  {
     "name": "Some1's Hyprland Rice",
     "distro": "Arch",
-    "git": "https://github.com/x-9917638/dotfiles"
+    "git": "https://github.com/x-9917638/dotfiles",
     "images": [
       "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot1.png",
       "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot2.png",
@@ -883,9 +886,15 @@
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/cava-fastfetch-vim.png",
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/btop.png",
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/launchmenu.png"
+  },
+  {
+    "name": "Micha's (r)ice",
+    "distro": "Arch",
+    "git": "https://github.com/FurriousFox/ice",
+    "images": [
+      "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-07-48-31.png",
+      "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-14-19-29.png"
     ],
     "version": 2
   }
-  
-
 ]
