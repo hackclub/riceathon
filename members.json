@@ -128,5 +128,10 @@
     "name": "leahcodes101",
     "distro": "arch",
     "git": "https://github.com/OtterCodes101/dotfiles"
-  }  
+  },
+  {
+    "name": "GingerGigiCat",
+    "os": "linuxmint",
+    "git": "https://github.com/GingerGigiCat/mint-dotfiles/"
+  }   
 ]
