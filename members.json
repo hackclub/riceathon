@@ -901,6 +901,16 @@
   "version": 2
   },
   {
+    "name": "Micha's (r)ice",
+    "distro": "Arch",
+    "git": "https://github.com/FurriousFox/ice",
+    "images": [
+      "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-07-48-31.png",
+      "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-14-19-29.png"
+    ],
+    "version": 2
+  },
+  {
     "name": "Cyrene Dotfiles",
     "distro": "macos",
     "git": "https://github.com/CattoYT/cyrene-dotfiles",
