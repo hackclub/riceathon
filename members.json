@@ -879,13 +879,22 @@
     ],
     "version": 2
   }, {
+      "name": "BomberFish's Simple i3 Rice",
+      "distro": "arch",
+      "git": "https://github.com/BomberFish/simple-i3-rice",
+      "images": [
+        "https://raw.githubusercontent.com/BomberFish/simple-i3-rice/master/screenshot.png"
+      ],
+      "version": 2
+    }, { 
     "name": "Hash-AK's Spatial EndeavourOS Rice",
     "distro": "EndeavourOS",
     "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles"
     "images": [
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/cava-fastfetch-vim.png",
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/btop.png",
-      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/launchmenu.png"
+      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/launchmenu.png"],
+  "version": 2
   },
   {
     "name": "Micha's (r)ice",
