@@ -12,6 +12,26 @@
   <meta name="description" content="Gallery of the rice's " />
   <meta property="og:description" content="Gallery of the rice's" />
   <meta name="twitter:description" content="Gallery of the rice's" />
+  <link rel="stylesheet" href="./gallery/carousel.css">
+  <style>
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      margin: 10px;
+      animation-duration: 250ms;
+      transition-duration: 250ms;
+      transform: scale(1);
+    }
+
+    .col:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
@@ -23,9 +43,125 @@
 
   <header>
     <h1 class="ultratitle">Gallery</h1>
-    <p class="headline">to be done later. (specifc: after i do the jam)</p>
+    <p class="headline" id="headline">Gallery of the {count} rice's</p>
   </header>
-
+  <div id="gallery"></div>
 </body>
+<script src="./gallery/carousel.js"></script>
+<script src="./gallery/icon.js"></script>
+<script>
+  function groupArray(arr, size = 3) {
+    const groups = []
+    for (let i = 0; i < arr.length; i += size) {
+      groups.push(arr.slice(i, i + size))
+    }
+    return groups
+  }
+  async function mainIfHome(gallery) {
+    console.log(1)
+
+    document.getElementById('headline').innerText = `Gallery of the ${gallery.length} rices`
+    // console.log(groupArray(gallery), 0)
+    const grouped = groupArray(gallery)
+    let index = 0;
+    for (const group of grouped) {
+      const row = document.createElement('div')
+      row.classList.add('row')
+      for (const cold of group) {
+        const col = document.createElement('a')
+        col.classList.add('card')
+        col.classList.add('col')
+        col.href = `#${index}`
+        const img = document.createElement('img')
+        // lazy load
+        img.setAttribute('loading', 'lazy')
+        img.src = cold.images[0]
+        img.alt = cold.name
+        img.style.width = "90%"
+        img.style.height = "90%"
+        img.style.borderRadius = "10px"
+        const h1 = document.createElement('h1')
+        // h1.append(setupIcon(cold.distro))
+        h1.innerText = cold.name
+        h1.style.paddingBottom = "10px"
+        col.appendChild(h1)
+        col.appendChild(img)
+        row.appendChild(col)
+        index++
+      }
+
+      document.getElementById('gallery').appendChild(row)
+    }
+  }
+  async function mainIfViewIndex(gallery) {
+    const index = parseInt(window.location.hash.slice(1))
+    const data = gallery[index]
+    if (!data) window.location.hash = ''
+    console.log(data)
+    const carousel = document.createElement('div')
+    carousel.classList.add('carousel-container')
+    const imgCarousel = document.createElement('div')
+    imgCarousel.classList.add('carousel')
+    for (const image of data.images) {
+      const img = document.createElement('img')
+      img.src = image
+      img.alt = data.name
+      img.style.width = "100%"
+      img.style.height = "auto"
+      imgCarousel.appendChild(img)
+    }
+    carousel.appendChild(imgCarousel)
+    const next = document.createElement('button')
+    next.classList.add('next')
+    next.innerText = 'Next Image'
+    const prev = document.createElement('button')
+    prev.classList.add('prev')
+    prev.innerText = 'Prev Image'
+    if (data.images.length > 1) {
+      carousel.appendChild(prev)
+      carousel.appendChild(next)
+    }
+    const titleThing = document.createElement('div')
+    titleThing.innerText = data.name
+    const div = titleThing
+    div.style.display = "flex"
+    div.style.justifyContent = "center"
+    div.style.alignItems = "center"
+    div.style.gap = "var(--spacing-2)"
+    div.style.fontSize = "var(--font-5)"
+    div.style.fontWeight = "var(--font-weight-bold)"
+
+    const gitLink = document.createElement('a')
+    gitLink.href = data.git
+    gitLink.innerText = "Dotfiles"
+    gitLink.style.textDecoration = "none"
+    gitLink.target = "_blank"
+
+    div.appendChild(document.createTextNode(" - "))
+    div.appendChild(gitLink)
+    div.appendChild(setupIcon(data.distro))
+    document.body.appendChild(titleThing)
+    document.body.appendChild(carousel)
+    const acarousel = setupCarousel()
+    next.onclick = () => acarousel.moveSlide(1)
+    prev.onclick = () => acarousel.moveSlide(-1)
+  }
+
+  async function main() {
+    const gallery = await fetch(
+      "https://raw.githubusercontent.com/hackclub/riceathon/refs/heads/main/members.json"
+    ).then(r => r.json())
+    if (isNaN(window.location.hash.slice(1)) || window.location.hash == "#" || window.location.hash == "") {
+      console.log(`Loading main`)
+      mainIfHome(gallery)
+    } else {
+      console.log(`#${window.location.hash.slice(1)}`)
+      document.getElementById('headline').remove()
+      mainIfViewIndex(gallery)
+    }
+    window.addEventListener('hashchange', () => location.reload())
+  }
+  main()
+</script>
 
 </html>

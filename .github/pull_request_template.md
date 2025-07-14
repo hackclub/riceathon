@@ -9,6 +9,7 @@
 <!-- please link source to hacktime url -->
 <!-- to get the badge url follow steps bellow -->
 <!-- waka.hackclub.com > projects > (your rice name) > right click on the img badge > click "Open image in new tab" > copy and paste url here. -->
+<!-- your badge url should look something like this: https://waka.hackclub.com/api/badge/<your slack id>/interval:any/project:<project name> -->
 
 - How many hours did it take to write this: `x amount of hours here (e.g: 4)`
 
@@ -29,3 +30,6 @@
 - [ ] I have my PR labeled correctly
 - [ ] I have not already submitted a rice
 - [ ] Under the section where it states "How many hours did it take to write this:" I have a valid image link
+- [ ] i have my screenshot images in the json file (urls please).
+- [ ] i have my hackatime badge
+- - if you have errors finding it please put your slack ID instead!!

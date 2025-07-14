@@ -1,0 +1,24 @@
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

@@ -1,132 +1,953 @@
 [
   {
-    "name": "ILikeMice",
-    "distro": "arch",
-    "git": "https://github.com/ILikeMice/firstrice"
-  },
-  {
-    "name": "Volkov",
-    "distro": "arch",
-    "git": "https://github.com/Volkov08/firstricedots"
+    "name": "The Pikachu",
+    "distro": "Fedora",
+    "git": "https://github.com/ThePikachuDev/riceathon",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/11069b07c825aef8181ed272040b6a7676b4bfc2_kew_nvim.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/208ffc656be0e95070abd5487f1a128274d7d588_lightscreen_fastfetch.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/02976f5999b2113c8c9fdda41fe0453b1c1f8637_lock_screen.webp",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ea70d3d80b20dd26466bd1713bcda8f231673ab_myown_power_widget.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9e92cca65da55828401659cafa14a78ae8c7f1d7_darkscreen_fastfetch.png"
+    ],
+    "version": 2
   },
   {
     "name": "neongamerbot-qk",
     "distro": "nixos",
-    "git": "https://github.com/NeonGamerBot-QK/nixos"
+    "git": "https://github.com/NeonGamerBot-QK/nixos",
+    "images": [
+      "https://github.com/NeonGamerBot-QK/nixos/blob/main/assets/screenshot.png?raw=true"
+    ],
+    "version": 1
   },
   {
     "name": "kierans-nix",
     "distro": "nixos",
-    "git": "https://github.com/kcoderhtml/dots"
-  },
-  {
-    "name": "askiiart",
-    "distro": "blendos",
-    "git": "https://github.com/askiiart/dotfiles"
+    "images": [
+      "https://github.com/taciturnaxolotl/dots/raw/master/.github/images/cool-retro-term.webp"
+    ],
+    "git": "https://github.com/taciturnaxolotl/dots",
+    "version": 1
   },
   {
     "name": "noahUglyPink",
     "distro": "mint",
-    "git": "https://github.com/PGtheVRguy/hackClubWinter/tree/main/ricathon"
+    "git": "https://github.com/PGtheVRguy/hackClubWinter/tree/main/ricathon",
+    "images": [
+      "https://cloud-ey9dpjgdz-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-ey9dpjgdz-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
   },
   {
     "name": "leanghok-cozy",
     "distro": "arch",
-    "git": "https://github.com/leanghok120/Dotfiles"
+    "git": "https://github.com/leanghok120/Dotfiles",
+    "images": [
+      "https://cloud-dqnzmqcok-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-dqnzmqcok-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "askiiart",
+    "distro": "blendos",
+    "git": "https://github.com/askiiart/dotfiles",
+    "images": ["https://cloud-jspw3whtf-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "pixel-city",
     "distro": "alpine",
-    "git": "https://github.com/fluxc0/therealdots"
+    "git": "https://github.com/fluxc0/therealdots",
+    "images": ["https://cloud-m0ducctkv-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "bunnyguy",
     "distro": "pop!_os",
-    "git": "https://github.com/snipchu/dotfiles"
+    "git": "https://github.com/snipchu/dotfiles",
+    "images": ["https://cloud-hn1xbtug3-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "TuinboonDev",
     "distro": "arch",
-    "git": "https://github.com/TuinboonDev/.files"
+    "git": "https://github.com/TuinboonDev/.files",
+    "images": [
+      "https://cloud-jpr1h0bhz-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-jpr1h0bhz-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-jpr1h0bhz-hack-club-bot.vercel.app/2image.png"
+    ],
+    "version": 1
   },
   {
-    "name": "cheyao",
+    "name": "cyao",
     "distro": "arch",
-    "git": "https://github.com/cheyao/hyprland"
-  },
-  {
-    "name": "TheTridentGuy",
-    "distro": "raspbian",
-    "git": "https://github.com/TheTridentGuy/RaspbianRice/"
+    "git": "https://github.com/cheyao/hyprland",
+    "images": ["https://cloud-ogq6nv9gp-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "firepup650",
     "distro": "debian",
-    "git": "https://git.h.hackclub.app/Firepup650/dotfiles"
+    "git": "https://git.h.hackclub.app/Firepup650/dotfiles",
+    "images": ["https://cloud-98o0ryrq6-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "TheTridentGuy",
+    "distro": "raspbian",
+    "git": "https://github.com/TheTridentGuy/RaspbianRice/",
+    "images": ["https://cloud-6cvn3arqd-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "neonrowan",
     "distro": "fedora",
-    "git": "https://github.com/GearBoxFox/dotfiles"
+    "images": [
+      "https://cloud-hg8xycs7e-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-hg8xycs7e-hack-club-bot.vercel.app/1image.png"
+    ],
+    "git": "https://github.com/GearBoxFox/dotfiles",
+    "version": 1
   },
   {
     "name": "StatusCritical",
     "distro": "arch",
-    "git": "https://github.com/StatusCritical/.config"
+    "git": "https://github.com/StatusCritical/.config",
+    "images": ["https://cloud-424yluwn3-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "xriiitox",
     "distro": "endeavouros",
-    "git": "https://github.com/xriiitox/dwm"
+    "git": "https://github.com/xriiitox/dwm",
+    "images": [
+      "https://cloud-e5x0mhp4x-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-e5x0mhp4x-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
   },
   {
     "name": "iris",
     "distro": "endeavouros",
-    "git": "https://github.com/Iris-TheRainbow/dotfiles"
+    "git": "https://github.com/Iris-TheRainbow/dotfiles",
+    "images": [
+      "https://cloud-1y06bt1ft-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-1y06bt1ft-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
   },
   {
     "name": "CyrilSLi",
     "distro": "fedora",
-    "git": "https://github.com/CyrilSLi/linux-scripts"
+    "git": "https://github.com/CyrilSLi/linux-scripts",
+    "images": ["https://cloud-ox6s9g2ua-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "BeachBunnyTheme",
     "distro": "mint",
-    "git": "https://github.com/BoomBoomMushroom/DillionRice-LinuxMint"
+    "git": "https://github.com/BoomBoomMushroom/DillionRice-LinuxMint",
+    "images": ["https://cloud-n2wham92j-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "Volkov",
+    "distro": "arch",
+    "git": "https://github.com/Volkov08/firstricedots",
+    "images": ["https://cloud-nnam2wxy8-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "Mei Misaki My Beloved",
     "distro": "arch",
-    "git": "https://github.com/Circuitbreaker08/Mei-Misaki-My-Beloved"
+    "git": "https://github.com/Circuitbreaker08/Mei-Misaki-My-Beloved",
+    "images": [
+      "https://cloud-ez05y2vf3-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-ez05y2vf3-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-ez05y2vf3-hack-club-bot.vercel.app/2image.png",
+      "https://cloud-ez05y2vf3-hack-club-bot.vercel.app/3image.png"
+    ],
+    "version": 1
   },
   {
     "name": "Nooz",
     "distro": "mint",
-    "git": "https://github.com/NoozAbooz/dotfiles"
+    "git": "https://github.com/NoozAbooz/dotfiles",
+    "images": ["https://cloud-htjirvm6s-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "Cyclic",
     "distro": "arch",
-    "git": "https://github.com/Cyclic007/Arch-Rice/tree/main"
+    "git": "https://github.com/Cyclic007/Arch-Rice/tree/main",
+    "images": ["https://cloud-kn7c366li-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "ILikeMice",
+    "distro": "arch",
+    "git": "https://github.com/ILikeMice/firstrice",
+    "images": ["https://cloud-jqnztijtc-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "Magical Paperclip",
     "distro": "raspbian",
-    "git": "https://github.com/magical-paperclip/-magical-paperclip-riceathon"
+    "git": "https://github.com/magical-paperclip/-magical-paperclip-riceathon",
+    "images": ["https://cloud-rk7ngkmw9-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
   },
   {
     "name": "Dragon863",
     "distro": "debian",
-    "git": "https://github.com/Dragon863/i3-rice"
+    "git": "https://github.com/Dragon863/i3-rice",
+    "images": [
+      "https://cloud-74lwimft1-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-74lwimft1-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
   },
   {
     "name": "swarsin",
-    "distro": "arch",
-    "git": "https://github.com/Swarsin/dotfiles"
+    "git": "https://github.com/Swarsin/dotfiles",
+    "images": [
+      "https://cloud-kedy2hpl2-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-3u59z9qme-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-3u59z9qme-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
   },
   {
-    "name": "GingerGigiCat",
-    "os": "linuxmint",
-    "git": "https://github.com/GingerGigiCat/mint-dotfiles/"
+    "name": "leahcodes101",
+    "distro": "arch",
+    "git": "https://github.com/OtterCodes101/dotfiles",
+    "images": ["https://cloud-x9kadu1o2-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "headblockhead",
+    "distro": "nixos",
+    "git": "https://github.com/headblockhead/dotfiles",
+    "images": [
+      "https://cloud-94styr2fd-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-94styr2fd-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-94styr2fd-hack-club-bot.vercel.app/2image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "3XAY",
+    "distro": "Kubuntu",
+    "git": "https://github.com/3XAY/riceathon/tree/3xay/dotfiles",
+    "images": [
+      "https://cloud-q4la5p0si-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-q4la5p0si-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-q4la5p0si-hack-club-bot.vercel.app/2image.png",
+      "https://cloud-61b3wmj3h-hack-club-bot.vercel.app/0image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "smol-xuan",
+    "distro": "arch",
+    "git": "https://github.com/CattoYT/fuxuan-dots",
+    "images": ["https://cloud-awhstup62-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "bean1134",
+    "distro": "fedora",
+    "git": "https://github.com/bento1134/dotfiles",
+    "images": ["https://cloud-l0c54m3qm-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "Yoav Mlotok",
+    "distro": "arch",
+    "git": "https://github.com/yoavmlotok/cat-rice",
+    "images": ["https://cloud-atzb8knwx-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "A Badly Drawn Wobbler",
+    "distro": "nixos",
+    "git": "https://github.com/Suya1671/commafiles",
+    "images": [
+      "https://cloud-32yctuybq-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-32yctuybq-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "sophia0805",
+    "distro": "ubuntu",
+    "git": "https://github.com/sophia0805/linux-rice",
+    "images": [
+      "https://cloud-5otb0ulut-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-5otb0ulut-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "udontur",
+    "distro": "arch",
+    "git": "https://github.com/udontur/hyprland",
+    "images": [
+      "https://cloud-mm8opqid0-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-mm8opqid0-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "ComputingSquid",
+    "distro": "nixos",
+    "git": "https://github.com/ProbablyComputingSquid/plasmaconfig",
+    "images": [
+      "https://cloud-pv6qcythp-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-pv6qcythp-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-pv6qcythp-hack-club-bot.vercel.app/2image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "ShibamRoy9826",
+    "distro": "arch",
+    "git": "https://github.com/ShibamRoy9826/qt_tile",
+    "images": [
+      "https://cloud-9jpla7zxu-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-9jpla7zxu-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-9jpla7zxu-hack-club-bot.vercel.app/2image.png",
+      "https://cloud-9jpla7zxu-hack-club-bot.vercel.app/3image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "UnnaturalTwilight",
+    "distro": "arch",
+    "git": "https://github.com/UnnaturalTwilight/Chaos-DotFiles",
+    "images": ["https://cloud-mlk8jtql1-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "ashheartz",
+    "distro": "endeavouros",
+    "git": "https://github.com/ashheartz/i3rice/",
+    "images": ["https://cloud-hyzlu1p61-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "thecashmoney",
+    "distro": "arch",
+    "git": "https://github.com/thecashmoney/dotfiles",
+    "images": [
+      "https://cloud-kq0awumuw-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-kq0awumuw-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-kq0awumuw-hack-club-bot.vercel.app/2image.png",
+      "https://cloud-kq0awumuw-hack-club-bot.vercel.app/3image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "mzums",
+    "distro": "endeavouros",
+    "git": "https://github.com/mzums/arch-i3wm-rice",
+    "images": [
+      "https://cloud-o5wgyd2ef-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-o5wgyd2ef-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "gbtsui",
+    "distro": "arch",
+    "git": "https://github.com/gbtsui/.config",
+    "images": ["https://cloud-qwc8hjjkf-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "PonderSlime",
+    "distro": "mint",
+    "git": "https://github.com/PonderSlime/Norse---Linux-Mint-Rice/",
+    "images": [
+      "https://cloud-lpjdne6fw-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-lpjdne6fw-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "roxwize",
+    "distro": "nixos",
+    "git": "https://git.sr.ht/~roxwize/.dotfiles",
+    "images": [
+      "https://cloud-fgqhhaly0-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-fgqhhaly0-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-fgqhhaly0-hack-club-bot.vercel.app/2image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "ShreyShingala",
+    "distro": "mint",
+    "git": "https://github.com/ShreyShingala/Lotr-Rice",
+    "images": ["https://cloud-d22qmkt0p-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "SupremeKirb",
+    "distro": "fedora",
+    "git": "https://github.com/Supremekirb/splatdotfiles",
+    "images": [
+      "https://cloud-cl1jqmixv-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-cl1jqmixv-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "Hibernathan1212",
+    "distro": "fedora",
+    "git": "https://github.com/Hibernathan1212/dotfiles",
+    "images": [
+      "https://cloud-5jfwfkd0f-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-5jfwfkd0f-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-5jfwfkd0f-hack-club-bot.vercel.app/2image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "Pegoku",
+    "distro": "arch",
+    "git": "https://github.com/Pegoku/dotfiles",
+    "images": [
+      "https://cloud-r9s07p01n-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-r9s07p01n-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "nulladmin1",
+    "distro": "nixos",
+    "git": "https://github.com/nulladmin1/nixos-config",
+    "images": [
+      "https://cloud-botl45src-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-botl45src-hack-club-bot.vercel.app/1image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "barab",
+    "distro": "arch",
+    "git": "https://github.com/Baraban511/brice",
+    "images": [
+      "https://cloud-bg7akfh9i-hack-club-bot.vercel.app/0img_9116.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "DaInfLoop",
+    "distro": "ubuntu",
+    "git": "https://github.com/DaInfLoop/dotfiles",
+    "images": ["https://cloud-hba2uvhjb-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "i-suck-at-most-stuff",
+    "distro": "mint",
+    "git": "https://github.com/i-suck-at-most-stuff/hackclub-riceathon",
+    "images": ["https://cloud-jmubo3oer-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "luxecat",
+    "distro": "macos",
+    "git": "https://github.com/luxecat/dots",
+    "images": [
+      "https://cloud-a8tsourf8-hack-club-bot.vercel.app/0screenshot_2024-12-31_at_4.43.39___pm.png",
+      "https://cloud-a8tsourf8-hack-club-bot.vercel.app/1screenshot_2024-12-31_at_3.53.53___pm.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "opott",
+    "distro": "mint",
+    "git": "https://github.com/opott/dotfiles",
+    "images": ["https://cloud-8qx5ydzr3-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "bojanradjenovic",
+    "distro": "debian",
+    "git": "https://github.com/bojanradjenovic/dotfiles",
+    "images": [
+      "https://cloud-rhok0jbjf-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-iug76tuhk-hack-club-bot.vercel.app/0image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "genr234",
+    "distro": "macos",
+    "git": "https://github.com/genr234/dotfiles/tree/main",
+    "images": ["https://cloud-6lxdyetfe-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "hash-ak",
+    "distro": "ubuntu",
+    "git": "https://github.com/Hash-AK/Hash-AK-First-Rice",
+    "images": [
+      "https://github.com/Hash-AK/Hash-AK-First-Rice/raw/main/2025-01-03-102442_hyprshot.png",
+      "https://github.com/Hash-AK/Hash-AK-First-Rice/raw/main/2025-01-03-103215_hyprshot.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "hex4",
+    "distro": "nixos",
+    "git": "https://github.com/Hex-4/nixos",
+    "images": [
+      "https://cloud-j61adq7yu-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-btrl1ldyf-hack-club-bot.vercel.app/0image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "ilwan",
+    "distro": "arch",
+    "git": "https://github.com/ilwan07/ArchRice",
+    "images": [
+      "https://github.com/ilwan07/ArchRice/blob/main/screenshots/terminals.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "WhatWare WestonLite",
+    "distro": "fedora",
+    "git": "https://github.com/whatwareweb/WestonLite",
+    "images": [
+      "https://github.com/whatwareweb/WestonLite/blob/main/Screenshots/Screenshot0.png?raw=true",
+      "https://github.com/whatwareweb/WestonLite/blob/main/Screenshots/Screenshot1.png?raw=true"
+    ],
+    "version": 1
+  },
+  {
+    "name": "Iviv122",
+    "distro": "arch",
+    "git": "https://github.com/Iviv122/configArch",
+    "images": [
+      "https://cloud-md6v75k99-hack-club-bot.vercel.app/120250106_16h57m45s_grim.png",
+      "https://cloud-md6v75k99-hack-club-bot.vercel.app/020250106_16h58m00s_grim.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "kazuala",
+    "distro": "arch",
+    "git": "https://github.com/Kazuala/arch-linux-hyprland-rice",
+    "images": [
+      "https://cloud-1aj5dugwd-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-1aj5dugwd-hack-club-bot.vercel.app/1image.png",
+      "https://cloud-1aj5dugwd-hack-club-bot.vercel.app/2image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "mo8codes",
+    "distro": "nixos",
+    "git": "https://github.com/mo8codes/gnome-rices.nix",
+    "images": ["https://cloud-1ku38mm2c-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "WilmervH",
+    "distro": "arch",
+    "git": "https://github.com/WilmervH/hypr-dotfiles",
+    "images": [
+      "https://raw.githubusercontent.com/WilmervH/hypr-dotfiles/refs/heads/main/assets/1.png",
+      "https://raw.githubusercontent.com/WilmervH/hypr-dotfiles/refs/heads/main/assets/2.png",
+      "https://raw.githubusercontent.com/WilmervH/hypr-dotfiles/refs/heads/main/assets/3.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "anne",
+    "distro": "mint",
+    "git": "https://github.com/arsoninstigator/rice",
+    "images": [
+      "https://github.com/user-attachments/assets/2ebe7974-d5f7-4fe6-aeb7-0bb356680ba8"
+    ],
+    "version": 1
+  },
+  {
+    "name": "DJ_Laser - n16",
+    "distro": "nixos",
+    "git": "https://github.com/DJ-Laser/nixos",
+    "images": [
+      "https://cloud-mxs6qgq8r-hack-club-bot.vercel.app/0screenshot_from_2025-01-07_15-44-14.png",
+      "https://cloud-mxs6qgq8r-hack-club-bot.vercel.app/1screenshot_from_2025-01-07_15-42-31.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "Victorio",
+    "distro": "nixos",
+    "git": "https://github.com/v1ctorio/nosesisaido",
+    "images": [
+      "https://cloud-dsg2mwk2u-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-7zvvy6mu5-hack-club-bot.vercel.app/0image.png",
+      "https://cloud-q3lz20ghz-hack-club-bot.vercel.app/0image.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "Knaifu",
+    "distro": "endeavouros",
+    "git": "https://github.com/Knaifu0030/catinux",
+    "images": ["https://i.imgur.com/AL8G39q.png"],
+    "version": 1
+  },
+  {
+    "name": "luna",
+    "distro": "fedora",
+    "git": "https://github.com/ellipticobj/dotfiles",
+    "images": [
+      "https://cloud-3gwgti4ga-hack-club-bot.vercel.app/0screenshot.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "jai's rice",
+    "distro": "debian",
+    "git": "https://github.com/Jaisinh/rice",
+    "images": [
+      "https://cloud-mqc2ek8p6-hack-club-bot.vercel.app/0screenshot_from_2025-01-10_22-25-53.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "3kh0",
+    "distro": "mint",
+    "git": "https://github.com/3kho/echo-rice",
+    "images": ["https://cloud-4yfne85ga-hack-club-bot.vercel.app/0preview.png"],
+    "version": 1
+  },
+  {
+    "name": "amber's dots",
+    "distro": "fedora",
+    "git": "https://github.com/transcental/dotfiles",
+    "images": ["https://cloud-lgc673ndr-hack-club-bot.vercel.app/0image.png"],
+    "version": 1
+  },
+  {
+    "name": "joshWM (not actually a rice)",
+    "distro": "x11",
+    "git": "https://github.com/hotcocoaNcode/joshwm",
+    "images": [
+      "https://cloud-r7ij49zc9-hack-club-bot.vercel.app/0screenshot_2024-11-26_at_12.35.19___am.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "Tileryr",
+    "distro": "arch",
+    "git": "https://github.com/Tileryr/arch-rice-config",
+    "images": [
+      "https://cloud-6rcnsjj8l-hack-club-bot.vercel.app/0250110_20h51m51s_screenshot.png",
+      "https://cloud-pmjksxhpj-hack-club-bot.vercel.app/0250110_20h48m35s_screenshot.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "piotrus rice",
+    "distro": "arch",
+    "git": "https://github.com/piter231/i3/",
+    "images": ["https://cloud-fmlkf8yf6-hack-club-bot.vercel.app/0example.png"],
+    "version": 1
+  },
+  {
+    "name": "RealStr1ke's ~/.dotfiles",
+    "distro": "Archcraft",
+    "git": "https://github.com/RealStr1ke/dotfiles",
+    "images": [
+      "https://cloud-2lfwq8w7e-hack-club-bot.vercel.app/0hackclub-riceathon-showcase-winter-2024.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "pmnlla-nixos",
+    "distro": "nixos",
+    "git": "https://github.com/pmnlla/riceathon",
+    "images": [
+      "https://cloud-906ar2tca-hack-club-bot.vercel.app/01000004161.webp"
+    ],
+    "version": 1
+  },
+  {
+    "name": "ByteAtATime",
+    "distro": "arch",
+    "git": "https://github.com/ByteAtATime/dotfiles",
+    "images": [
+      "https://cloud-3s51005uc-hack-club-bot.vercel.app/02025-01-09_19-01-1736478659.png"
+    ],
+    "version": 1
+  },
+  {
+    "name": "gusruben",
+    "distro": "arch",
+    "git": "https://github.com/gusruben/sushi-dotfiles",
+    "images": ["https://i.imgur.com/XO4Qpcj.png"],
+    "version": 1
+  },
+  {
+    "name": "brody-nixos",
+    "distro": "nixos",
+    "images": [
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo1.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo2.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo3.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo4.png",
+      "https://raw.githubusercontent.com/Glitch752/NixOSConfiguration/refs/heads/main/images/demo5.png"
+    ],
+    "git": "https://github.com/Glitch752/NixOSConfiguration",
+    "version": 1
+  },
+  {
+    "name": "Robust orange",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/Iviv122/Rice/refs/heads/master/assets/screenshot.26.jpg"
+    ],
+    "git": "https://github.com/Iviv122/Rice",
+    "version": 2
+  },
+  {
+    "name": "It just works™",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/Sylviettee/dotfiles/refs/heads/main/assets/screenshot1.png",
+      "https://raw.githubusercontent.com/Sylviettee/dotfiles/refs/heads/main/assets/screenshot2.png"
+    ],
+    "git": "https://github.com/Sylviettee/dotfiles",
+    "version": 2
+  },
+  {
+    "name": "Dystopia2",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/TuinboonDev/dystopia2/refs/heads/main/assets/nf.png",
+      "https://raw.githubusercontent.com/TuinboonDev/dystopia2/refs/heads/main/assets/wofi.png"
+    ],
+    "git": "https://github.com/TuinboonDev/dystopia2/",
+    "version": 2
+  },
+  {
+    "name": "virtualfuzz",
+    "distro": "cachyos",
+    "images": [
+      "https://codeberg.org/virtualfuzz/hyprdot/media/branch/main/screenshot.webp"
+    ],
+    "git": "https://codeberg.org/virtualfuzz/hyprdot",
+    "version": 2
+  },
+  {
+    "name": "cid's hyprland rice",
+    "distro": "fedora",
+    "images": [
+      "https://raw.githubusercontent.com/thisiscid/dotfiles-riceathon/refs/heads/main/demo-1.png"
+    ],
+    "git": "https://github.com/thisiscid/dotfiles-riceathon",
+    "version": 2
+  },
+  {
+    "name": "soap-phia's rice",
+    "distro": "arch",
+    "images": [
+      "https://github.com/soap-phia/arch-rice/blob/main/one.png",
+      "https://github.com/soap-phia/arch-rice/blob/main/two.png"
+    ],
+    "git": "https://github.com/soap-phia/arch-rice/",
+    "version": 2
+  },
+  {
+    "name": "Dan (Z)'s Rice",
+    "distro": "ubuntu",
+    "images": [
+      "https://github.com/justdanielndev/rice/blob/main/demo.png?raw=true"
+    ],
+    "git": "https://github.com/justdanielndev/rice",
+    "version": 2
+  },
+  {
+    "name": "sophia0805 ocean themed rice",
+    "distro": "kubuntu",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/95cb582f12aa1369b9aa2de2e1d9bfb6bcd4bf93_screenshot_2025-06-21_223012.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/03738053b96031ea5704791758cf6b9599ba0a08_screenshot_2025-06-21_223330.png"
+    ],
+    "git": "https://github.com/sophia0805/ocean-dotfiles",
+    "version": 2
+  },
+  {
+    "name": "cosmic arch theme",
+    "distro": "arch",
+    "images": [
+      "https://raw.githubusercontent.com/Glitch752/dotfiles/refs/heads/master/images/screenshot1.png",
+      "https://raw.githubusercontent.com/Glitch752/dotfiles/refs/heads/master/images/screenshot2.png"
+    ],
+    "git": "https://github.com/Glitch752/dotfiles",
+    "version": 2
+  },
+  {
+    "name": ":3",
+    "distro": "macos :(",
+    "images": [
+      "https://github.com/finnnnnnnnnnnnnnnnn/rice/blob/main/Screenshot%202025-06-22%20at%201.58.04%E2%80%AFPM.png?raw=true"
+    ],
+    "version": 2,
+    "git": "https://github.com/finnnnnnnnnnnnnnnnn/rice"
+  },
+  {
+    "name": "askiiart",
+    "distro": "fedora",
+    "images": [
+      "https://raw.githubusercontent.com/askiiart-s-self-forks/niri-dotfiles/main/screenshot.png"
+    ],
+    "git": "https://github.com/askiiart-s-self-forks/niri-dotfiles",
+    "version": 2
+  },
+  {
+    "name": "junyali's dotfiles",
+    "distro": "endeavouros",
+    "images": [
+      "https://github.com/junyali/dotfiles/blob/master/demo-1.png?raw=true",
+      "https://github.com/junyali/dotfiles/blob/master/demo-2.png?raw=true"
+    ],
+    "git": "https://github.com/junyali/dotfiles",
+    "version": 2
+  },
+  {
+    "name": "manni's dotfiles",
+    "distro": "fedora asahi",
+    "git": "https://github.com/mannireis/dotfiles",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/552794e0bedb5f05175d0f70b7b2f622ee07eae2_screenshot_2025-06-26_12_13_07.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/13ecfd6ff0911be38d4504e7a0d10ac1aef2b78c_screenshot_2025-06-26_12_14_19.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/8498d596a90885ef3dbac1a45f46c1247e9f7b3c_screenshot_2025-06-26_12_14_01.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/722e642575da37fb6a9c3993210b507fbc8ab2f2_screenshot_2025-06-26_12_13_10.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Yoav Mlotok's Rice",
+    "distro": "arch",
+    "git": "https://github.com/yoavmlotok/rice",
+    "images": [
+      "https://github.com/yoavmlotok/rice/blob/main/previews/usual.png",
+      "https://github.com/yoavmlotok/rice/blob/main/previews/menu.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Shibam's niri dotfiles",
+    "distro": "Arch",
+    "git": "https://github.com/ShibamRoy9826/niri-dotfiles",
+    "images": [
+      "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/1.png",
+      "https://github.com/ShibamRoy9826/niri-dotfiles/blob/main/screenshots/2.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Ankush's niri dotfiles",
+    "distro": "Arch",
+    "git": "https://github.com/AnkushRoy-code/niri-dots",
+    "images": [
+      "https://github.com/user-attachments/assets/4d27c300-57d6-46b4-b6fc-787a4afcd1b7",
+      "https://github.com/user-attachments/assets/c9f526ba-d5ff-41be-8211-8f142a8bc3aa"
+    ],
+    "version": 2
+  },
+  {
+    "name": "pbhak's rice",
+    "distro": "Arch",
+    "git": "https://github.com/pbhak/dotfiles",
+    "images": [
+      "https://github.com/pbhak/dotfiles/blob/master/screenshots/desktop.png",
+      "https://github.com/pbhak/dotfiles/blob/master/screenshots/screenshot1.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Some1's Hyprland Rice",
+    "distro": "Arch",
+    "git": "https://github.com/x-9917638/dotfiles",
+    "images": [
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot1.png",
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot2.png",
+      "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "strawberry rice cakes",
+    "distro": "endeavourOS",
+    "git": "https://github.com/strawberry-p/dotfiles",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "BomberFish's Simple i3 Rice",
+    "distro": "arch",
+    "git": "https://github.com/BomberFish/simple-i3-rice",
+    "images": [
+      "https://raw.githubusercontent.com/BomberFish/simple-i3-rice/master/screenshot.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Hash-AK's Spatial EndeavourOS Rice",
+    "distro": "EndeavourOS",
+    "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles",
+    "images": [
+      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/cava-fastfetch-vim.png",
+      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/btop.png",
+      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/launchmenu.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Micha's (r)ice",
+    "distro": "Arch",
+    "git": "https://github.com/FurriousFox/ice",
+    "images": [
+      "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-07-48-31.png",
+      "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-14-19-29.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Cyrene Dotfiles",
+    "distro": "macos",
+    "git": "https://github.com/CattoYT/cyrene-dotfiles",
+    "images": [
+      "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.41.34.png?raw=true",
+      "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.50.31.png?raw=true"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Gigi Rice",
+    "distro": "linuxmint",
+    "git": "https://github.com/GingerGigiCat/mint-dotfiles"
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/3b7069fd98a533fdf1a06ec76e007f4e5988f943_image.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
+    ],
+    "version": 2
   }   
 ]
