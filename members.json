@@ -1,5 +1,5 @@
 [
-   {
+  {
     "name": "The Pikachu",
     "distro": "Fedora",
     "git": "https://github.com/ThePikachuDev/riceathon",
@@ -10,7 +10,7 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ea70d3d80b20dd26466bd1713bcda8f231673ab_myown_power_widget.png",
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9e92cca65da55828401659cafa14a78ae8c7f1d7_darkscreen_fastfetch.png"
     ],
-    "version": 2,
+    "version": 2
   },
   {
     "name": "neongamerbot-qk",
@@ -891,32 +891,35 @@
       "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
     ],
     "version": 2
-  }, 
+  },
   {
     "name": "strawberry rice cakes",
     "distro": "endeavourOS",
     "git": "https://github.com/strawberry-p/dotfiles",
-    "images": ["https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"],
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"
+    ],
     "version": 2
   },
   {
     "name": "BomberFish's Simple i3 Rice",
-      "distro": "arch",
-      "git": "https://github.com/BomberFish/simple-i3-rice",
-      "images": [
-        "https://raw.githubusercontent.com/BomberFish/simple-i3-rice/master/screenshot.png"
-      ],
-      "version": 2
-    }, 
-  { 
+    "distro": "arch",
+    "git": "https://github.com/BomberFish/simple-i3-rice",
+    "images": [
+      "https://raw.githubusercontent.com/BomberFish/simple-i3-rice/master/screenshot.png"
+    ],
+    "version": 2
+  },
+  {
     "name": "Hash-AK's Spatial EndeavourOS Rice",
     "distro": "EndeavourOS",
     "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles",
     "images": [
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/cava-fastfetch-vim.png",
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/btop.png",
-      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/launchmenu.png"],
-  "version": 2
+      "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/launchmenu.png"
+    ],
+    "version": 2
   },
   {
     "name": "Micha's (r)ice",
