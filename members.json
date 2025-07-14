@@ -1,4 +1,17 @@
 [
+   {
+    "name": "The Pikachu",
+    "distro": "Fedora",
+    "git": "https://github.com/ThePikachuDev/riceathon",
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/11069b07c825aef8181ed272040b6a7676b4bfc2_kew_nvim.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/208ffc656be0e95070abd5487f1a128274d7d588_lightscreen_fastfetch.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/02976f5999b2113c8c9fdda41fe0453b1c1f8637_lock_screen.webp",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ea70d3d80b20dd26466bd1713bcda8f231673ab_myown_power_widget.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9e92cca65da55828401659cafa14a78ae8c7f1d7_darkscreen_fastfetch.png"
+    ],
+    "version": 2,
+  },
   {
     "name": "neongamerbot-qk",
     "distro": "nixos",
