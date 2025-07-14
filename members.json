@@ -891,22 +891,27 @@
       "https://raw.githubusercontent.com/x-9917638/dotfiles/refs/heads/main/.dotfiles/Assets/Screenshot3.png"
     ],
     "version": 2
-  }, {
+  }, 
+  {
     "name": "strawberry rice cakes",
     "distro": "endeavourOS",
     "git": "https://github.com/strawberry-p/dotfiles",
-    "images": ["https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"
-      "name": "BomberFish's Simple i3 Rice",
+    "images": ["https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"],
+    "version": 2
+  },
+  {
+    "name": "BomberFish's Simple i3 Rice",
       "distro": "arch",
       "git": "https://github.com/BomberFish/simple-i3-rice",
       "images": [
         "https://raw.githubusercontent.com/BomberFish/simple-i3-rice/master/screenshot.png"
       ],
       "version": 2
-    }, { 
+    }, 
+  { 
     "name": "Hash-AK's Spatial EndeavourOS Rice",
     "distro": "EndeavourOS",
-    "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles"
+    "git": "https://github.com/Hash-AK/EndeavourOS-Dotfiles",
     "images": [
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/cava-fastfetch-vim.png",
       "https://raw.githubusercontent.com/Hash-AK/EndeavourOS-Dotfiles/refs/heads/main/assets/btop.png",
@@ -920,6 +925,16 @@
     "images": [
       "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-07-48-31.png",
       "https://raw.githubusercontent.com/FurriousFox/ice/refs/heads/main/Screenshots/screenshot_2025-07-12-14-19-29.png"
+    ],
+    "version": 2
+  },
+  {
+    "name": "Cyrene Dotfiles",
+    "distro": "macos",
+    "git": "https://github.com/CattoYT/cyrene-dotfiles",
+    "images": [
+      "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.41.34.png?raw=true",
+      "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.50.31.png?raw=true"
     ],
     "version": 2
   }
