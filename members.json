@@ -213,7 +213,6 @@
   },
   {
     "name": "swarsin",
-    "distro": "arch",
     "git": "https://github.com/Swarsin/dotfiles",
     "images": [
       "https://cloud-kedy2hpl2-hack-club-bot.vercel.app/0image.png",
@@ -940,5 +939,15 @@
       "https://github.com/CattoYT/cyrene-dotfiles/blob/main/Screenshot%202025-07-12%20at%2016.50.31.png?raw=true"
     ],
     "version": 2
-  }
+  },
+  {
+    "name": "Gigi Rice",
+    "distro": "linuxmint",
+    "git": "https://github.com/GingerGigiCat/mint-dotfiles"
+    "images": [
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/3b7069fd98a533fdf1a06ec76e007f4e5988f943_image.png",
+      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
+    ],
+    "version": 2
+  }   
 ]
