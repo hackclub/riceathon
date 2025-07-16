@@ -943,11 +943,11 @@
   {
     "name": "Gigi Rice",
     "distro": "linuxmint",
-    "git": "https://github.com/GingerGigiCat/mint-dotfiles"
+    "git": "https://github.com/GingerGigiCat/mint-dotfiles",
     "images": [
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/3b7069fd98a533fdf1a06ec76e007f4e5988f943_image.png",
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
-  }   
+  }
 ]
