@@ -164,7 +164,7 @@
                             NOTE: "📝",
                             WARNING: "⚠️",
                         };
-                        return `<div class="alert alert-${type.toLowerCase()}"><strong>${icons[type]} ${type}</strong><br>${cleanContent}</div>\n`;
+                        return `<div class="alert alert-${type.toLowerCase()}"><strong>${icons[type]} ${type}</strong><br>${marked.parse(cleanContent)}</div>\n`;
                     },
                 );
 
