@@ -1,0 +1,222 @@
+<h1>Installing Linux</h1>
+<p>In this guide, I have chosen to install base Arch Linux. The following guides will assume that you are using Arch, but any Arch derivative should be able to follow the following guides too. If you aren&#39;t installing Arch, skip to the next guide <a href="?part=2">here</a>.</p>
+<div class="alert alert-important"><strong>ℹ️ IMPORTANT</strong><br><p>Note: Commands prefixed with <code>#</code> should be run as root, and those prefixed with <code>$</code> should be run unprivileged.<br>In the ISO, all commands are run as root as default.<br>Lines prefixed with <code>//</code> are comments and should NOT be run.</p>
+</div>
+
+<p>Psst! Can&#39;t be bothered to manually install? Try the <code>archinstall</code> command after connecting to internet in the live environment, or maybe try an Arch derivative :3</p>
+<h1>Downloading the ISO</h1>
+<p>First things first, we need to download the ISO file for Arch Linux. You can download it from <a href="https://archlinux.org/download/">here</a>. </p>
+<p>Next, scroll down to the mirror lists:
+<img src="./part-1/iso-mirrors.png" alt="image"></p>
+<p>Find your closest mirror, then click it.
+You should be met with a page similar to this:
+<img src="./part-1/iso-download.png" alt="image">
+Select <code>archlinux-202x.xx.xx-x86_64.iso</code>.</p>
+<h1>Preparing an installation medium</h1>
+<p>Next, we need to prepare something to boot from. I assume you don&#39;t have a CD, and I don&#39;t either, so we will use a USB drive. </p>
+<ol>
+<li>Download <a href="https://www.ventoy.net/en/download.html">ventoy</a>. </li>
+<li>Follow the instructions on the website to install ventoy.</li>
+<li>Plug in your USB drive.</li>
+<li>Open ventoy, select your USB drive, and install ventoy to the drive.</li>
+<li>Drag and drop the downloaded ISO onto your USB drive</li>
+</ol>
+<h1>Booting into the Arch live environment</h1>
+<p>Once you have flashed the USB, plug it into your computer and boot into the USB. You can do this by pressing the boot menu key on your computer. This is usually <code>F12</code> or <code>F2</code>, otherwise you can find your correct key <a href="https://www.wikihow.com/Enter-BIOS">here</a></p>
+<p>When you boot into the USB you will be greeted with this screen:
+<img src="./part-1/systemd-boot.png" alt="img">
+Hit <ENTER> to continue. You should see something like this:
+<img src="./part-1/initial-boot.png" alt="img"></p>
+<h1>Installing Arch Linux</h1>
+<div class="alert alert-caution"><strong>⚠️ CAUTION</strong><br><p>I recommend you follow the official installation guide <a href="https://wiki.archlinux.org/title/Installation_guide">here</a>, and research what options you want, but you can continue on if you just want to install. I will be picking options suitable for my hardware: 512GB nvme, Intel i7, Integrated graphics. Please do your own research and pick more sensible options if you have different hardware.</p>
+</div>
+
+<p>Also note that I have opinions, and the packages I install may not be the best for you.</p>
+<h2>Connecting to the internet</h2>
+<p>This is much easier if you have ethernet. I don&#39;t, so I will be showing how to do it with wifi.</p>
+<ol>
+<li>First, check your network interface:</li>
+</ol>
+<pre style="white-space:pre-wrap;"><code># ip link
+</code></pre>
+<p>Look for <code>wlan0</code>.</p>
+<ol start="2">
+<li>Now we can use <code>iwctl</code> to connect.</li>
+</ol>
+<pre style="white-space:pre-wrap;"><code># iwctl
+// Scan for networks
+  [iwd]# station wlan0 scan
+  [iwd]# station wlan0 get-networks
+// Select your wifi
+  [iwd]# station wlan0 connect &lt;YOUR WIFI NETWORK NAME&gt;
+  [iwd]# quit
+</code></pre>
+<ol start="3">
+<li>Now, verify your connection:</li>
+</ol>
+<pre style="white-space:pre-wrap;"><code># ping ping.archlinux.org
+</code></pre>
+<h2>Update system clock</h2>
+<pre style="white-space:pre-wrap;"><code># timedatectl
+</code></pre>
+<h2>Disk Setup</h2>
+<p>When recognised by the live system, disks are assigned to a block device such as <code>/dev/sda</code>, <code>/dev/nvme0n1</code> or <code>/dev/mmcblk0</code>. </p>
+<div class="alert alert-caution"><strong>⚠️ CAUTION</strong><br><p>Partitioning should depend on your disk. Please don&#39;t blindly follow my steps, my setup is not optimal. See <a href="https://wiki.archlinux.org/title/Installation_guide#Partition_the_disks">here</a>. If you really just want to install, continue on.</p>
+</div>
+
+<ol>
+<li>Identify your block device:</li>
+</ol>
+<pre style="white-space:pre-wrap;"><code># lsblk
+</code></pre>
+<p>For me, this will be <code>nvme0n1</code></p>
+<ol start="2">
+<li>Now, to partition:</li>
+</ol>
+<pre style="white-space:pre-wrap;"><code># fdisk /dev/nvme0n1
+Command (m for help): g
+
+Created a new GPT disklabel (GUID: BEBC11C7-507C-4D2D-A069-656DED1F8ECD).
+
+Command (m for help): n
+Partition number (1-128, default 1): 1
+First sector (2048-1000215182, default 2048): 2048
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-1000215182, default 1000214527): +1G
+
+Created a new partition 1 of type &#39;Linux filesystem&#39; and of size 1 GiB.
+
+Command (m for help): t
+
+Selected partition 1
+Partition type or alias (type L to list all): uefi
+Changed type of partition &#39;Linux filesystem&#39; to &#39;EFI System&#39;.
+
+Command (m for help): n
+Partition number (2-128, default 2): 2
+First sector (2099200-1000215182, default 2099200): 2099200
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2099200-1000215182, default 1000214527): 1000214527
+
+Created a new partition 2 of type &#39;Linux filesystem&#39; and of size 475.9 GiB.
+
+Command (m for help): w
+</code></pre>
+<p>Our resulting partition table:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Mount point on the installed system</th>
+<th align="center">Partition</th>
+<th align="center">Partition type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">/boot</td>
+<td align="center">/dev/nvme0n1p1</td>
+<td align="center">EFI system partition</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td align="center">/dev/nvme0n1p2</td>
+<td align="center">Linux x86-64 root (/)</td>
+</tr>
+</tbody></table>
+<ol start="3">
+<li>Now, we need to add filesystems:</li>
+</ol>
+<p>Format the boot partition</p>
+<pre style="white-space:pre-wrap;"><code># mkfs.fat -F 32 /dev/nvme0n1p1
+</code></pre>
+<p>Format our root partition. There are better filesystems, do your own research <a href="https://wiki.archlinux.org/title/File_system">here</a> please!</p>
+<pre style="white-space:pre-wrap;"><code># mkfs.ext4 /dev/nvme0n1p2
+</code></pre>
+<h2>Mounting partitions</h2>
+<p>We need to mount our partitions so we can actually do things.</p>
+<pre style="white-space:pre-wrap;"><code># mount /dev/nvme0n1p2 /mnt
+# mount --mkdir /dev/nvme0n1p1 /mnt/boot
+</code></pre>
+<h2>Installation</h2>
+<p>Now for the actual installation...</p>
+<h3>1. Select mirrors</h3>
+<p>Packages to be installed must be downloaded from mirror servers, which are defined in /etc/pacman.d/mirrorlist. The higher a mirror is placed in the list, the more priority it is given when downloading a package.</p>
+<p>The topmost worldwide mirror should be fast enough for most people, but you may still want to inspect the file to see if it is satisfactory. If it is not, edit the file accordingly, and move the geographically closest mirrors to the top of the list, although other criteria should be taken into account. </p>
+<p>This file will later be copied to the new system by pacstrap, so it is worth getting right. </p>
+<pre style="white-space:pre-wrap;"><code># nano /etc/pacman.d/mirrorlist
+// Make your changes
+</code></pre>
+<h3>2. Install essential packages</h3>
+<div class="alert alert-caution"><strong>⚠️ CAUTION</strong><br><p>Please go <a href="https://wiki.archlinux.org/title/Installation_guide#Install_essential_packages">here</a> and make sure the right packages for YOU are installed.</p>
+</div>
+
+<p>A base system:</p>
+<pre style="white-space:pre-wrap;"><code># pacstrap -K /mnt base linux-firmware intel-ucode sudo fsck networkmanager nano man-db man-pages texinfo
+</code></pre>
+<h3>3. fstab</h3>
+<p>To get needed file systems (like the one used for the boot directory /boot) mounted on startup, generate an fstab file. Use -U or -L to define by UUID or labels, respectively: </p>
+<pre style="white-space:pre-wrap;"><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre>
+<p>Check the resulting /mnt/etc/fstab file, and edit it in case of errors. </p>
+<h3>4. chroot</h3>
+<p>To directly interact with the new system&#39;s environment, tools, and configurations for the next steps as if you were booted into it, change root into the new system: </p>
+<pre style="white-space:pre-wrap;"><code># arch-chroot /mnt
+</code></pre>
+<h3>5. Time</h3>
+<p>For human convenience (e.g. showing the correct local time or handling Daylight Saving Time), set the time zone:</p>
+<pre style="white-space:pre-wrap;"><code># ln -sf /usr/share/zoneinfo/Australia/Sydney /etc/localtime
+# hwclock --systohc
+</code></pre>
+<h3>6. Localization</h3>
+<p>To use the correct region and language specific formatting (like dates, currency, decimal separators), edit /etc/locale.gen and uncomment the UTF-8 locales you will be using. Generate the locales by running:</p>
+<pre style="white-space:pre-wrap;"><code># locale-gen
+</code></pre>
+<p>Create the <code>/etc/locale.conf</code> file, and set the LANG variable accordingly:</p>
+<pre style="white-space:pre-wrap;"><code># nano /etc/locale.conf
+
+LANG=en_US.UTF-8
+</code></pre>
+<h3>7. Network configuration</h3>
+<p>To assign a consistent, identifiable name to your system (particularly useful in a networked environment), create the hostname file:</p>
+<pre style="white-space:pre-wrap;"><code># echo &quot;yourhostname&quot; &gt; /etc/hostname
+</code></pre>
+<p>Now, lets enable NetworkManager:</p>
+<pre style="white-space:pre-wrap;"><code># systemctl enable NetworkManager
+</code></pre>
+<h3>8. Bootloader</h3>
+<p>I opt for systemd-boot. You can find comparisons of some bootloaders <a href="https://wiki.archlinux.org/title/Arch_boot_process#Feature_comparison">here</a>.</p>
+<pre style="white-space:pre-wrap;"><code># bootctl install
+</code></pre>
+<h3>9. Root password</h3>
+<p>Set a secure password for the root user to allow performing administrative actions:</p>
+<pre style="white-space:pre-wrap;"><code># passwd
+</code></pre>
+<h3>10. Final configuration</h3>
+<h4>1. Create an user</h4>
+<blockquote>
+<p>See <a href="https://apple.stackexchange.com/questions/192365/is-it-ok-to-use-the-root-user-as-a-normal-user/192422#192422">here</a> for why you shouldn&#39;t stay logged in as root</p>
+</blockquote>
+<p>Add an unprivileged user:</p>
+<pre style="white-space:pre-wrap;"><code># useradd -m &lt;yourusername&gt;
+</code></pre>
+<p>Set a possword:</p>
+<pre style="white-space:pre-wrap;"><code># passwd &lt;yourusername&gt;
+</code></pre>
+<p>Edit the <code>/etc/sudoers</code> file to allow yourself to use sudo:</p>
+<pre style="white-space:pre-wrap;"><code># nano /etc/sudoers
+</code></pre>
+<p>Locate <code># User priveilege specification</code>. </p>
+<p>Add: <code>&lt;yourusername&gt; ALL=(ALL)</code></p>
+<h4>2. Audio</h4>
+<p>We will use pipewire:</p>
+<pre style="white-space:pre-wrap;"><code># pacman -S wireplumber
+</code></pre>
+<p>Reboot, and log in to the user you created.</p>
+<p>We will need to enable wireplumber:</p>
+<pre style="white-space:pre-wrap;"><code>$ systemctl --user enable wireplumber
+</code></pre>
+<h4>3. Shell Completions</h4>
+<p>Assuming you are using bash, install <code>bash-completion</code>:</p>
+<pre style="white-space:pre-wrap;"><code># pacman -S bash-completion
+</code></pre>
+<p>Yippeee we now have a base system! </p>
+<p>Click <a href="?part=2">here</a> to advance to the next session.
+guide.html:199:29</p>
+
