@@ -25,7 +25,7 @@ See the basics of ricing [here](https://jie-fang.github.io/blog/basics-of-ricing
 4. Submit the form to us
 5. Get sent a prize of your choice!
 
-_prizes include smolhaj, hackclub socks, and thigh highs_
+_prizes include smolhaj,hacker socks, hc merch and much more_
 
 In the form, you will need to put the email to your Slack account.
 This email must be linked to your hakatime in order for it to count.
