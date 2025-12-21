@@ -131,11 +131,12 @@ Created a new partition 2 of type 'Linux filesystem' and of size 475.9 GiB.
 Command (m for help): w
 ```
 
+<!-- prettier-ignore -->
 Our resulting partition table:
-| Mount point on the installed system | Partition | Partition type |
+| Mount point on the installed system | Partition      | Partition type        |
 | :---------------------------------: | :------------: | :-------------------: |
-| /boot | /dev/nvme0n1p1 | EFI system partition |
-| / | /dev/nvme0n1p2 | Linux x86-64 root (/) |
+| /boot                               | /dev/nvme0n1p1 | EFI system partition  |
+| /                                   | /dev/nvme0n1p2 | Linux x86-64 root (/) |
 
 3. Now, we need to add filesystems:
 
