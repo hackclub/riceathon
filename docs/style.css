@@ -190,7 +190,7 @@ header > p > a {
 }
 
 .guide-content code:not([class*='language-']) {
-    background: #00000000;
+    background: #1e1e1e;
     color: #c9d1d9;
 }
 
