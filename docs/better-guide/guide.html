@@ -12,7 +12,6 @@
             name="description"
             content="Learn how to rice your Linux desktop"
         />
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
@@ -93,22 +92,17 @@
         </div>
 
         <script>
-            marked.setOptions({
-                breaks: true,
-                gfm: true,
-            });
-
             const guides = {
                 1: {
-                    file: "./part-1/en-US.md",
+                    file: "./part-1/content.html",
                     title: "Part 1: Installing Linux",
                 },
                 2: {
-                    file: "./part-2/en-US.md",
+                    file: "./part-2/content.html",
                     title: "Part 2: Additional Packages",
                 },
                 3: {
-                    file: "./part-3/en-US.md",
+                    file: "./part-3/content.html",
                     title: "Part 3: Ricing Your Desktop",
                 },
             };
@@ -145,37 +139,6 @@
                 }
             }
 
-            function processMarkdown(md, basePath) {
-                md = md.replace(
-                    /!\[([^\]]*)\]\(\.\/([^)]+)\)/g,
-                    `![$1](${basePath}$2)`,
-                );
-
-                md = md.replace(
-                    />\s*\[!(IMPORTANT|CAUTION|TIP|NOTE|WARNING)\]\s*\n((?:>.*\n?)*)/g,
-                    (match, type, content) => {
-                        const cleanContent = content
-                            .replace(/^>\s*/gm, "")
-                            .trim();
-                        const icons = {
-                            IMPORTANT: "ℹ️",
-                            CAUTION: "⚠️",
-                            TIP: "💡",
-                            NOTE: "📝",
-                            WARNING: "⚠️",
-                        };
-                        return `<div class="alert alert-${type.toLowerCase()}"><strong>${icons[type]} ${type}</strong><br>${marked.parse(cleanContent)}</div>\n`;
-                    },
-                );
-
-                md = md.replace(
-                    /\[([^\]]+)\]\(\.\.\/part-(\d)\/en-US\.md\)/g,
-                    "[$1](?part=$2)",
-                );
-
-                return md;
-            }
-
             async function loadGuide(part) {
                 const guide = guides[part];
                 if (!guide) return;
@@ -187,13 +150,11 @@
                     const response = await fetch(guide.file);
                     if (!response.ok) throw new Error("Failed to load guide");
 
-                    let markdown = await response.text();
-                    const basePath = guide.file.replace("en-US.md", "");
-                    markdown = processMarkdown(markdown, basePath);
+                    let content = await response.text();
+                    
+                    contentEl.innerHTML = content;
 
-                    contentEl.innerHTML = marked.parse(markdown);
-
-                    document.querySelectorAll("pre code").forEach((block) => {
+                    document.querySelectorAll("pre code[class*='language-']").forEach((block) => {
                         hljs.highlightElement(block);
                     });
 

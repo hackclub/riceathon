@@ -181,11 +181,17 @@ header > p > a {
     border-radius: var(--radii-default);
     padding: var(--spacing-3);
     overflow-x: auto;
+    font-size: 1em;
 }
 
 .guide-content code {
     font-family: "Fira Code", "Consolas", monospace;
     font-size: 0.9em;
+}
+
+.guide-content code:not([class*='language-']) {
+    background: #00000000;
+    color: #c9d1d9;
 }
 
 .guide-content :not(pre) > code {
