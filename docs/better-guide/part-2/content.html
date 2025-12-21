@@ -1,34 +1,68 @@
 <h1>Installing additional packages</h1>
-<p>In this guide, I have chosen to install base Arch Linux. The following guide will assume that you are using Arch, but any Arch derivative should be able to follow the following guides too.</p>
-<p>Also, a reminder that I have opinions, so these packages may not be the best for you :3</p>
-<p>You can find alternatives <a href="https://github.com/rcalixte/awesome-wayland">here</a>, <a href="https://wiki.archlinux.org/title/Common_Applications/">here</a> and just searching!</p>
-<div class="alert alert-important"><strong>ℹ️ IMPORTANT</strong><br><p>Note: Commands prefixed with <code>#</code> should be run as root, and those prefixed with <code>$</code> should be run unprivileged.<br>To run something as root, use <code>sudo &lt;command&gt;</code>. If for some reason this doesn&#39;t work, try <code>sudo -E &lt;command&gt;</code> and finally try <code>su</code> to get a root shell<br>Lines prefixed with <code>//</code> are comments and should NOT be run.</p>
+<p>
+    In this guide, I have chosen to install base Arch Linux. The following guide
+    will assume that you are using Arch, but any Arch derivative should be able
+    to follow the following guides too.
+</p>
+<p>
+    Also, a reminder that I have opinions, so these packages may not be the best
+    for you :3
+</p>
+<p>
+    You can find alternatives
+    <a href="https://github.com/rcalixte/awesome-wayland">here</a>,
+    <a href="https://wiki.archlinux.org/title/Common_Applications/">here</a> and
+    just searching!
+</p>
+<div class="alert alert-important">
+    <strong>ℹ️ IMPORTANT</strong><br />
+    <p>
+        Note: Commands prefixed with <code>#</code> should be run as root, and
+        those prefixed with <code>$</code> should be run unprivileged.<br />To
+        run something as root, use <code>sudo &lt;command&gt;</code>. If for
+        some reason this doesn&#39;t work, try
+        <code>sudo -E &lt;command&gt;</code> and finally try <code>su</code> to
+        get a root shell<br />Lines prefixed with <code>//</code> are comments
+        and should NOT be run.
+    </p>
 </div>
 
-
 <h1>Desktop Environment</h1>
-<p>Well, we have Linux, but all you see is a black console?? </p>
+<p>Well, we have Linux, but all you see is a black console??</p>
 <p>We need to install a desktop environment and/or a compositor!</p>
-<p>I have opted to use <a href="https://github.com/YaLTeR/niri">niri</a>, why? Because it&#39;s written in rust and looks nice :3</p>
-<pre style="white-space:pre-wrap;"><code># sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk 
+<p>
+    I have opted to use <a href="https://github.com/YaLTeR/niri">niri</a>, why?
+    Because it&#39;s written in rust and looks nice :3
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code># sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 </code></pre>
-<p>See configuration options <a href="https://yalter.github.io/niri/">here</a></p>
-<p>Note that using a complete desktop environment like KDE plasma or GNOME will make setup much easier, but may restrict what you can rice.</p>
+<p>
+    See configuration options <a href="https://yalter.github.io/niri/">here</a>
+</p>
+<p>
+    Note that using a complete desktop environment like KDE plasma or GNOME will
+    make setup much easier, but may restrict what you can rice.
+</p>
 <p>KDE Plasma:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S plasma
+<pre style="white-space: pre-wrap"><code># pacman -S plasma
 </code></pre>
 <p>Gnome:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S gnome
+<pre style="white-space: pre-wrap"><code># pacman -S gnome
 </code></pre>
 <h1>Greeter</h1>
-<p>Without a greeter, you&#39;d have to use the ugly console to log in all the time.</p>
+<p>
+    Without a greeter, you&#39;d have to use the ugly console to log in all the
+    time.
+</p>
 <p>I choose sddm as a greeter.</p>
-<pre style="white-space:pre-wrap;"><code># sudo pacman -S sddm
+<pre style="white-space: pre-wrap"><code># sudo pacman -S sddm
 </code></pre>
 <h1>AUR helper</h1>
 <p>This simplifies using the AUR a lot!</p>
 <p>I choose to use yay:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S base-devel
+<pre style="white-space: pre-wrap"><code># pacman -S base-devel
 $ git clone https://aur.archlinux.org/yay.git
 $ cd yay
 $ makepkg
@@ -36,93 +70,141 @@ $ makepkg
 </code></pre>
 <h1>File Manager</h1>
 <p>I persoanlly use thunar, but it isn&#39;t very riceable ;-;</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S thunar
+<pre style="white-space: pre-wrap"><code># pacman -S thunar
 </code></pre>
 <h1>Browser</h1>
 <p>I use zen-browser</p>
-<pre style="white-space:pre-wrap;"><code>$ yay -S zen-browser
+<pre style="white-space: pre-wrap"><code>$ yay -S zen-browser
 // or
 $ yay -S zen-browser-bin
 </code></pre>
-<p>Zen documentation can be found <a href="https://docs.zen-browser.app/">here</a></p>
+<p>
+    Zen documentation can be found
+    <a href="https://docs.zen-browser.app/">here</a>
+</p>
 <p>Zen can be riced using userChrome.css!</p>
 <h1>Code Editor</h1>
 <p>I use Zed:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S zed
+<pre style="white-space: pre-wrap"><code># pacman -S zed
 </code></pre>
 <p>Zed documentation can be found <a href="https://zed.dev/docs/">here</a></p>
-<p>If you reallyyyy want to use vscode, see Arch wiki <a href="https://wiki.archlinux.org/title/Visual_Studio_Code">here</a></p>
-<p>You can find other IDEs/editors <a href="https://wiki.archlinux.org/title/List_of_applications/Utilities#Integrated_development_environments">here</a></p>
+<p>
+    If you reallyyyy want to use vscode, see Arch wiki
+    <a href="https://wiki.archlinux.org/title/Visual_Studio_Code">here</a>
+</p>
+<p>
+    You can find other IDEs/editors
+    <a
+        href="https://wiki.archlinux.org/title/List_of_applications/Utilities#Integrated_development_environments"
+        >here</a
+    >
+</p>
 <h1>Hackatime</h1>
 <p>With Zed:</p>
 <ol>
-<li><code>Ctrl+Shift+P</code></li>
-<li>Search for <code>zed: extensions</code></li>
-<li>Search for <code>wakatime</code></li>
-<li>Install!</li>
+    <li><code>Ctrl+Shift+P</code></li>
+    <li>Search for <code>zed: extensions</code></li>
+    <li>Search for <code>wakatime</code></li>
+    <li>Install!</li>
 </ol>
 <h1>Terminal Emulator</h1>
 <p>I like kitty, but I&#39;ve heard that Hack Club is sponsoring ghostty!</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S kitty
+<pre style="white-space: pre-wrap"><code># pacman -S kitty
 // or
 # pacman -S ghostty
 </code></pre>
-<p>Kitty docs can be found <a href="https://sw.kovidgoyal.net/kitty/conf/">here</a></p>
+<p>
+    Kitty docs can be found
+    <a href="https://sw.kovidgoyal.net/kitty/conf/">here</a>
+</p>
 <p>Ghostty docs can be found <a href="https://ghostty.org/docs">here</a></p>
 <h1>Video Player</h1>
 <p>mpv is a lightweight video player:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S mpv
+<pre style="white-space: pre-wrap"><code># pacman -S mpv
 </code></pre>
 <p>if you want, you can install VLC:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S vlc
+<pre style="white-space: pre-wrap"><code># pacman -S vlc
 </code></pre>
 <p>On Arch, VLC and its plugins are split. I would recommend:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S vlc-plugins-all
+<pre style="white-space: pre-wrap"><code># pacman -S vlc-plugins-all
 </code></pre>
 <h1>Status Bar</h1>
-<p>If you like, there are widget frameworks that help you build cool bars and other widgets.</p>
+<p>
+    If you like, there are widget frameworks that help you build cool bars and
+    other widgets.
+</p>
 <p>This includes:</p>
 <ul>
-<li>ags (Configured in JavaScript, docs <a href="https://aylur.github.io/ags/guide/quick-start.html">here</a>) - <code>$ yay -S aylurs-gtk-shell-git</code></li>
-<li>Quickshell (Configured in QML, docs <a href="https://quickshell.org/about/">here</a>) - <code>$ yay -S quickshell</code></li>
-<li>Fabric (Configured in Python, docs <a href="https://wiki.ffpy.org/getting-started/introduction/">here</a>) - <code>$ yay -S python-fabric-git</code></li>
+    <li>
+        ags (Configured in JavaScript, docs
+        <a href="https://aylur.github.io/ags/guide/quick-start.html">here</a>) -
+        <code>$ yay -S aylurs-gtk-shell-git</code>
+    </li>
+    <li>
+        Quickshell (Configured in QML, docs
+        <a href="https://quickshell.org/about/">here</a>) -
+        <code>$ yay -S quickshell</code>
+    </li>
+    <li>
+        Fabric (Configured in Python, docs
+        <a href="https://wiki.ffpy.org/getting-started/introduction/">here</a>)
+        - <code>$ yay -S python-fabric-git</code>
+    </li>
 </ul>
 <p>If you only want a simple bar, I use waybar:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S waybar
+<pre style="white-space: pre-wrap"><code># pacman -S waybar
 </code></pre>
-<p>Waybar docs can be found <a href="https://github.com/Alexays/Waybar/wiki">here</a></p>
+<p>
+    Waybar docs can be found
+    <a href="https://github.com/Alexays/Waybar/wiki">here</a>
+</p>
 <h1>App Launcher</h1>
 <p>I use rofi:</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S rofi
+<pre style="white-space: pre-wrap"><code># pacman -S rofi
 </code></pre>
-<p>Rofi docs can be found <a href="https://davatorium.github.io/rofi/">here</a></p>
+<p>
+    Rofi docs can be found <a href="https://davatorium.github.io/rofi/">here</a>
+</p>
 <h1>Clipboard</h1>
 <p>I use cliphist with wl-clipboard</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S cliphist
+<pre style="white-space: pre-wrap"><code># pacman -S cliphist
 </code></pre>
 <p>Docs <a href="https://github.com/sentriz/cliphist">here</a></p>
 <h1>Screen Locker</h1>
 <p>I use hyprlock</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S hyprlock
+<pre style="white-space: pre-wrap"><code># pacman -S hyprlock
 </code></pre>
-<p>hyprlock docs can be found <a href="https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/">here</a></p>
+<p>
+    hyprlock docs can be found
+    <a href="https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/">here</a>
+</p>
 <h1>System Monitor</h1>
 <p>I use btop, it runs in the terminal!</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S btop
+<pre style="white-space: pre-wrap"><code># pacman -S btop
 </code></pre>
 <p>Docs can be found <a href="https://github.com/aristocratos/btop">here</a></p>
 <h1>Color Palettes</h1>
-<p>If you like having color palettes that change with your wallpaper, try <code>matugen</code> or <code>pywal</code>:</p>
-<pre style="white-space:pre-wrap;"><code>$ yay -S matugen
+<p>
+    If you like having color palettes that change with your wallpaper, try
+    <code>matugen</code> or <code>pywal</code>:
+</p>
+<pre style="white-space: pre-wrap"><code>$ yay -S matugen
 // or
 # pacman -S python-pywal
 </code></pre>
-<p>Matugen docs can be found <a href="https://github.com/InioX/matugen/wiki/Configuration">here</a></p>
+<p>
+    Matugen docs can be found
+    <a href="https://github.com/InioX/matugen/wiki/Configuration">here</a>
+</p>
 <h1>Wallpaper Picker</h1>
 <p>I use waypaper!</p>
-<pre style="white-space:pre-wrap;"><code># pacman -S waypaper
+<pre style="white-space: pre-wrap"><code># pacman -S waypaper
 </code></pre>
-<p>Waypaper docs can be found <a href="https://anufrievroman.gitbook.io/waypaper/configuration">here</a></p>
-<p>Now that we have a more complete system, reboot and <a href="?part=3">continue to part 3</a> for the actual ricing!
-guide.html:199:29</p>
-
+<p>
+    Waypaper docs can be found
+    <a href="https://anufrievroman.gitbook.io/waypaper/configuration">here</a>
+</p>
+<p>
+    Now that we have a more complete system, reboot and
+    <a href="?part=3">continue to part 3</a> for the actual ricing!
+</p>

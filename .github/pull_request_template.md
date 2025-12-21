@@ -29,7 +29,7 @@
 - [ ] I have filled out the form correctly
 - [ ] I have my PR labeled correctly
 - [ ] I have not already submitted a rice
-- [ ] Under the section where it states "How many hours did it take to write this:" I have a valid image link
+- [ ] Under the section where it states "How many hours did it take to write this:" I have filled in my hours
 - [ ] i have my screenshot images in the json file (urls please).
 - [ ] i have my hackatime badge
 - - if you have errors finding it please put your slack ID instead!!

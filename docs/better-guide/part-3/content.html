@@ -1,77 +1,155 @@
 <h1>Ricing your desktop</h1>
 <p>What even is ricing?</p>
-<p>(Stolen off some website)
-&quot;Ricing is a term that has been used in the computer and technology world to describe the act of customizing the appearance of Linux. The term originated from the practice of modifying a car’s appearance, specifically by adding decorative features such as spoilers or other embellishments to make it look more appealing. Ricing involves making changes to the user interface, icons, themes, fonts, and other visual elements of Linux to give it a unique and personalised look.&quot;</p>
+<p>
+    (Stolen off some website) &quot;Ricing is a term that has been used in the
+    computer and technology world to describe the act of customizing the
+    appearance of Linux. The term originated from the practice of modifying a
+    car’s appearance, specifically by adding decorative features such as
+    spoilers or other embellishments to make it look more appealing. Ricing
+    involves making changes to the user interface, icons, themes, fonts, and
+    other visual elements of Linux to give it a unique and personalised
+    look.&quot;
+</p>
 <h1>Getting Started</h1>
-<p>Because we are going to submit a git repo to riceathon, it&#39;s best to get organised before we start.</p>
+<p>
+    Because we are going to submit a git repo to riceathon, it&#39;s best to get
+    organised before we start.
+</p>
 <p>Create a new directory for your dotfiles:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">mkdir -p ~/dotfiles
+<pre style="white-space: pre-wrap"><code class="language-sh">mkdir -p ~/dotfiles
 </code></pre>
-<div class="alert alert-important"><strong>ℹ️ IMPORTANT</strong><br><p><strong>What are dotfiles?</strong><br>On linux, configuration files are usually stored in &quot;dot&quot;config (~/.config).<br>Dotfiles are these configuration files!</p>
+<div class="alert alert-important">
+    <strong>ℹ️ IMPORTANT</strong><br />
+    <p>
+        <strong>What are dotfiles?</strong><br />On linux, configuration files
+        are usually stored in &quot;dot&quot;config (~/.config).<br />Dotfiles
+        are these configuration files!
+    </p>
 </div>
 
-<p>Create a GitHub repository:
-<img src="./part-3/github-repo.png" alt="img"></p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">cd ~/dotfiles
+<p>
+    Create a GitHub repository: <img src="./part-3/github-repo.png" alt="img" />
+</p>
+<pre style="white-space: pre-wrap"><code class="language-sh">cd ~/dotfiles
 git init
 git branch -M main
 git remote add origin github_url
 </code></pre>
 <p>Now, we&#39;ve set up our folder.</p>
-<p>Whenever we want to add a configuration folder to this github repo, we can create a symbolic link:</p>
-<pre style="white-space:pre-wrap;"><code>sln ~/.config/FOLDER_OR_FILE ~/dotfiles/FOLDER_OR_FILE
+<p>
+    Whenever we want to add a configuration folder to this github repo, we can
+    create a symbolic link:
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code>sln ~/.config/FOLDER_OR_FILE ~/dotfiles/FOLDER_OR_FILE
 </code></pre>
-<div class="alert alert-important"><strong>ℹ️ IMPORTANT</strong><br><p><strong>What is a symbolic link?</strong><br>A symbolic link (symlink) is a pointer to another file or folder.<br>So, if that file or folder changes, the symlinked contents also change!</p>
+<div class="alert alert-important">
+    <strong>ℹ️ IMPORTANT</strong><br />
+    <p>
+        <strong>What is a symbolic link?</strong><br />A symbolic link (symlink)
+        is a pointer to another file or folder.<br />So, if that file or folder
+        changes, the symlinked contents also change!
+    </p>
 </div>
 
 <h1>Ricing</h1>
-<p>When ricing, it is nice to set a color palette or a theme that you want to center your rice around. </p>
-<p>Alternatively, you can try color palette generators - see <a href="https://github.com/InioX/matugen/wiki/Configuration">matugen</a>, or just go crazy!</p>
-<p>If you want inspiration, you can visit <a href="https://www.reddit.com/r/unixporn/">r/unixporn</a>, or look through <a href="https://github.com/x-9917638/dotfiles">my old dotfiles</a>!</p>
-<p>This guide will walk you through ricing a program that was installed in part 2, waybar :3</p>
-<p>Our end result should look somewhat like this!
-<img src="./part-3/waybar.png" alt="waybar"></p>
+<p>
+    When ricing, it is nice to set a color palette or a theme that you want to
+    center your rice around.
+</p>
+<p>
+    Alternatively, you can try color palette generators - see
+    <a href="https://github.com/InioX/matugen/wiki/Configuration">matugen</a>,
+    or just go crazy!
+</p>
+<p>
+    If you want inspiration, you can visit
+    <a href="https://www.reddit.com/r/unixporn/">r/unixporn</a>, or look through
+    <a href="https://github.com/x-9917638/dotfiles">my old dotfiles</a>!
+</p>
+<p>
+    This guide will walk you through ricing a program that was installed in part
+    2, waybar :3
+</p>
+<p>
+    Our end result should look somewhat like this!
+    <img src="./part-3/waybar.png" alt="waybar" />
+</p>
 <h2>Fonts</h2>
 <p>We&#39;ve been using an ugly font this whole time ;-;</p>
 <p>Lets spice it up!</p>
-<p>The Arch wiki has a list of fonts <a href="https://wiki.archlinux.org/title/Fonts#Font_packages">here</a>, browse through them or search for a fun font!</p>
-<p>Personally, I use <a href="https://github.com/subframe7536/Maple-font">Maple Mono</a>:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">yay -S maplemononormal-nf-cn
+<p>
+    The Arch wiki has a list of fonts
+    <a href="https://wiki.archlinux.org/title/Fonts#Font_packages">here</a>,
+    browse through them or search for a fun font!
+</p>
+<p>
+    Personally, I use
+    <a href="https://github.com/subframe7536/Maple-font">Maple Mono</a>:
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code class="language-sh">yay -S maplemononormal-nf-cn
 </code></pre>
 <p>Also, install a Nerd Font for icons:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">pacman -S nerd-font
+<pre style="white-space: pre-wrap"><code class="language-sh">pacman -S nerd-font
 </code></pre>
-<p>Pick your favourite! I use Jetbrains Mono (42) :3 </p>
+<p>Pick your favourite! I use Jetbrains Mono (42) :3</p>
 <h2>Waybar</h2>
-<p>Waybar docs can be found <a href="https://github.com/Alexays/Waybar/wiki">here</a>!</p>
+<p>
+    Waybar docs can be found
+    <a href="https://github.com/Alexays/Waybar/wiki">here</a>!
+</p>
 <p>Make sure waybar is installed:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">pacman -S waybar
+<pre style="white-space: pre-wrap"><code class="language-sh">pacman -S waybar
 </code></pre>
 <p>Now, create the folders and files for waybar&#39;s config files:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">mkdir -p ~/.config/waybar/{css,layouts}
+<pre
+    style="white-space: pre-wrap"
+><code class="language-sh">mkdir -p ~/.config/waybar/{css,layouts}
 touch ~/.config/waybar/{config.jsonc,modules.jsonc,style.css}
 touch ~/.config/waybar/layouts/{with_music.jsonc,with_window.jsonc}
 touch ~/.config/waybar/css/{style.css,colors.css}
 </code></pre>
-<div class="alert alert-tip"><strong>💡 TIP</strong><br><p><strong>What did we do?</strong><br><code>mkdir</code> creates a directory. The <code>-p</code> option makes it create intermediate paths too! <code>touch</code> is a command that creates a file.<br>Whenever we use the <code>{}</code>, syntax, we are using <strong>brace expansions</strong>:</p>
-<blockquote>
-<p>&quot;Brace expansions are a mechanism to generate arbitrary strings sharing a common prefix and suffix, either of which can be empty&quot;<br>So:</p>
-</blockquote>
-<pre style="white-space:pre-wrap;"><code class="language-sh">echo a{d,c,b}e
+<div class="alert alert-tip">
+    <strong>💡 TIP</strong><br />
+    <p>
+        <strong>What did we do?</strong><br /><code>mkdir</code> creates a
+        directory. The <code>-p</code> option makes it create intermediate paths
+        too! <code>touch</code> is a command that creates a file.<br />Whenever
+        we use the <code>{}</code>, syntax, we are using
+        <strong>brace expansions</strong>:
+    </p>
+    <blockquote>
+        <p>
+            &quot;Brace expansions are a mechanism to generate arbitrary strings
+            sharing a common prefix and suffix, either of which can be
+            empty&quot;<br />So:
+        </p>
+    </blockquote>
+    <pre style="white-space: pre-wrap"><code class="language-sh">echo a{d,c,b}e
 # RESULT: ade ace abe
 </code></pre>
 </div>
 
 <p>Remember to symlink the waybar folder!</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">sln ~/.config/waybar ~/dotfiles/waybar
+<pre
+    style="white-space: pre-wrap"
+><code class="language-sh">sln ~/.config/waybar ~/dotfiles/waybar
 </code></pre>
-<p>Now that we have our proper file layout, let&#39;s open our editor and do some coding :3</p>
+<p>
+    Now that we have our proper file layout, let&#39;s open our editor and do
+    some coding :3
+</p>
 <p>To open Zed:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">zeditor ~/.config/waybar
+<pre
+    style="white-space: pre-wrap"
+><code class="language-sh">zeditor ~/.config/waybar
 </code></pre>
 <p>Make sure that Hackatime is working!</p>
 <p>We&#39;ve structured our waybar folder to be organised and modular:</p>
-<pre style="white-space:pre-wrap;"><code>~/.config/waybar/
+<pre style="white-space: pre-wrap"><code>~/.config/waybar/
 ├── config.jsonc
 ├── css
 │   ├── colors.css
@@ -83,17 +161,40 @@ touch ~/.config/waybar/css/{style.css,colors.css}
 └── style.css
 </code></pre>
 <p>Waybar has 2 files that must exist: config.jsonc, and style.css.</p>
-<p>However, to make it easier to edit small things like modules or layout, we&#39;ve separated out a <code>modules.jsonc</code> and a <code>layouts</code> folder.</p>
-<p>Our top-level config.jsonc is simple, because all we do is import a layout.
-Open the terminal from Zed (Ctrl + ~) and type:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">echo &#39;{ &quot;include&quot;: [ &quot;~/.config/waybar/layouts/with_music.jsonc&quot; ] }&#39; &gt; config.jsonc
+<p>
+    However, to make it easier to edit small things like modules or layout,
+    we&#39;ve separated out a <code>modules.jsonc</code> and a
+    <code>layouts</code> folder.
+</p>
+<p>
+    Our top-level config.jsonc is simple, because all we do is import a layout.
+    Open the terminal from Zed (Ctrl + ~) and type:
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code class="language-sh">echo &#39;{ &quot;include&quot;: [ &quot;~/.config/waybar/layouts/with_music.jsonc&quot; ] }&#39; &gt; config.jsonc
 </code></pre>
-<div class="alert alert-tip"><strong>💡 TIP</strong><br><p><strong>What did we do?</strong><br><code>&gt;</code> is a redirection operator. Here, we redirect the output of a command (<code>echo</code>) into a file (<code>config.jsonc</code>).</p>
+<div class="alert alert-tip">
+    <strong>💡 TIP</strong><br />
+    <p>
+        <strong>What did we do?</strong><br /><code>&gt;</code> is a redirection
+        operator. Here, we redirect the output of a command (<code>echo</code>)
+        into a file (<code>config.jsonc</code>).
+    </p>
 </div>
 
-<p>Next, lets make our modules. Open the <code>modules.jsonc</code> file in Zed.</p>
-<p>Enter this in and look at the comments. Don&#39;t worry if the icons aren&#39;t visible on GitHub, as their font doesn&#39;t include the nerd font icons! Remember that you can customise things to suit you:</p>
-<pre style="white-space:pre-wrap;"><code class="language-json">// You can find icons using the nerd font cheat sheet: https://nerdfonts.com/cheat_sheet
+<p>
+    Next, lets make our modules. Open the <code>modules.jsonc</code> file in
+    Zed.
+</p>
+<p>
+    Enter this in and look at the comments. Don&#39;t worry if the icons
+    aren&#39;t visible on GitHub, as their font doesn&#39;t include the nerd
+    font icons! Remember that you can customise things to suit you:
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code class="language-json">// You can find icons using the nerd font cheat sheet: https://nerdfonts.com/cheat_sheet
 {
   // Shows our workspaces!
   &quot;niri/workspaces&quot;: {
@@ -112,7 +213,7 @@ Open the terminal from Zed (Ctrl + ~) and type:</p>
   &quot;niri/window&quot;: {
     &quot;max-length&quot;: 45,
   },
-  
+
   // A module for monitoring cpu usage
   &quot;cpu&quot;: {
     // Polling interval, in ms
@@ -249,7 +350,7 @@ Open the terminal from Zed (Ctrl + ~) and type:</p>
       },
     },
   },
-  
+
   // mpris is a interface that lets programs poll playing media
   &quot;mpris&quot;: {
     &quot;format&quot;: &quot;{artist} - {title}&quot;,
@@ -275,7 +376,7 @@ Open the terminal from Zed (Ctrl + ~) and type:</p>
 <p>Yippee! We finished our waybar modules!</p>
 <p>Now it&#39;s time for the layout.</p>
 <p>Open <code>layouts/with_music.jsonc</code> in Zed. Enter this:</p>
-<pre style="white-space:pre-wrap;"><code class="language-json">{
+<pre style="white-space: pre-wrap"><code class="language-json">{
   &quot;layer&quot;: &quot;bottom&quot;,
   &quot;position&quot;: &quot;top&quot;,
   &quot;margin&quot;: &quot;0 0 0 0&quot;,
@@ -310,8 +411,11 @@ Open the terminal from Zed (Ctrl + ~) and type:</p>
   &quot;include&quot;: [&quot;~/.config/waybar/modules.jsonc&quot;],
 }
 </code></pre>
-<p>Done! Optionally, you can place this into <code>layouts/with_window.jsonc</code>:</p>
-<pre style="white-space:pre-wrap;"><code class="language-json">{
+<p>
+    Done! Optionally, you can place this into
+    <code>layouts/with_window.jsonc</code>:
+</p>
+<pre style="white-space: pre-wrap"><code class="language-json">{
   &quot;layer&quot;: &quot;top&quot;,
   &quot;position&quot;: &quot;top&quot;,
   &quot;width&quot;: 1920,
@@ -344,15 +448,26 @@ Open the terminal from Zed (Ctrl + ~) and type:</p>
   &quot;include&quot;: [&quot;~/.config/waybar/modules.jsonc&quot;],
 }
 </code></pre>
-<p>Now that we&#39;ve finished defining our layouts and modules, we can work on our styles.</p>
-<p>Like <code>config.jsonc</code>, our top level <code>style.css</code> is a simple 1 line import:</p>
-<pre style="white-space:pre-wrap;"><code class="language-sh">echo &#39;@import &quot;css/style.css&quot;;&#39; &gt; style.css
+<p>
+    Now that we&#39;ve finished defining our layouts and modules, we can work on
+    our styles.
+</p>
+<p>
+    Like <code>config.jsonc</code>, our top level <code>style.css</code> is a
+    simple 1 line import:
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code class="language-sh">echo &#39;@import &quot;css/style.css&quot;;&#39; &gt; style.css
 </code></pre>
 <p>Now we can run <code>waybar</code> and see our edits live!</p>
-<p>In Zed, open <code>css/colors.css</code>. Here, we define our colour palette! Here are mine:</p>
-<pre style="white-space:pre-wrap;"><code class="language-css">/* 
-Define your background, foreground, inactive colour 
-(Lowkey doesn&#39;t have a big difference 
+<p>
+    In Zed, open <code>css/colors.css</code>. Here, we define our colour
+    palette! Here are mine:
+</p>
+<pre style="white-space: pre-wrap"><code class="language-css">/*
+Define your background, foreground, inactive colour
+(Lowkey doesn&#39;t have a big difference
 */
 @define-color background rgba(20, 19, 24, 0.5);
 @define-color tooltip-bg @background;
@@ -367,8 +482,13 @@ Define your background, foreground, inactive colour
 @define-color yellow #c8c878;
 @define-color green #78c878;
 </code></pre>
-<p>Now, we can edit our styles. Open <code>css/style.css</code> in Zed and enter this:</p>
-<pre style="white-space:pre-wrap;"><code class="language-css">/* Import our color palette */
+<p>
+    Now, we can edit our styles. Open <code>css/style.css</code> in Zed and
+    enter this:
+</p>
+<pre
+    style="white-space: pre-wrap"
+><code class="language-css">/* Import our color palette */
 @import &quot;colors.css&quot;;
 
 * {
@@ -555,16 +675,25 @@ menu &gt; *:hover {
 <p>Make all your other programs look nice :3</p>
 <p>This could include:</p>
 <ul>
-<li>Compositor</li>
-<li>Terminal Emulator</li>
-<li>App Launcher</li>
-<li>etc!</li>
+    <li>Compositor</li>
+    <li>Terminal Emulator</li>
+    <li>App Launcher</li>
+    <li>etc!</li>
 </ul>
 <h2>Helpful Resources</h2>
 <ul>
-<li><a href="https://www.reddit.com/r/unixporn/">r/unixporn</a> - This is the biggest online community for ricing! Go here for inspiration.</li>
-<li><a href="https://wiki.archlinux.org">Arch Wiki</a> - The Arch Linux wiki is incredibly helpful for everything related to Linux, with helpful information on tons of software.</li>
-<li><a href="https://github.com/fosslife/awesome-ricing">awesome-ricing</a> - A massive open-source list of ricing/Linux tools and software from window managers, to terminals, to colour schemes, to even wallpapers.
-guide.html:199:29</li>
+    <li>
+        <a href="https://www.reddit.com/r/unixporn/">r/unixporn</a> - This is
+        the biggest online community for ricing! Go here for inspiration.
+    </li>
+    <li>
+        <a href="https://wiki.archlinux.org">Arch Wiki</a> - The Arch Linux wiki
+        is incredibly helpful for everything related to Linux, with helpful
+        information on tons of software.
+    </li>
+    <li>
+        <a href="https://github.com/fosslife/awesome-ricing">awesome-ricing</a>
+        - A massive open-source list of ricing/Linux tools and software from
+        window managers, to terminals, to colour schemes, to even wallpapers.
+    </li>
 </ul>
-
