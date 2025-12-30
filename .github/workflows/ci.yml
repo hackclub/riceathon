@@ -1,14 +1,16 @@
 name: Tests
 on:
-  pull_request:
-    types: [opened, reopened,synchronize]
-  
+  pull_request_target:
+    types: [opened, reopened, synchronize]
   workflow_dispatch:
+
+permissions:
+  pull-requests: write # To add comments/request reviews, and to tag rices
+  contents: read # To check members.json
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: write-all # feel free to change this in PR.
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js

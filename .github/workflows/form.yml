@@ -1,11 +1,13 @@
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
-permissions: write-all
+
+permissions:
+  pull-requests: write # To leave comments on PRs
 
 jobs:
   send-message:
-#    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'rice-setup')
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'rice-setup')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
