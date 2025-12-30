@@ -1,16 +1,23 @@
 // using node-fetch instead of octokit.
 const fs = require("fs");
-const simpleApiReq = (r, method, data, headers) => {
+const simpleApiReq = async (r, method, data, headers) => {
   console.debug("#req");
-  return fetch("https://api.github.com/" + r, {
-    method: method || "GET",
-    headers: {
-      ...(headers ?? {}),
-      Accept: "application/vnd.github+json",
-      Authorization: "Bearer " + process.env.GITHUB_TOKEN,
-    },
-    body: data ? JSON.stringify(data) : undefined,
-  }).then((r) => r.json());
+  try {
+    const res = await fetch("https://api.github.com/" + r, {
+	  method: method || "GET",
+	  headers: {
+	    ...(headers ?? {}),
+	    "User-Agent": "Riceathon-PR-Validation",
+	    Accept: "application/vnd.github+json",
+	    Authorization: "Bearer " + process.env.GITHUB_TOKEN,
+	  },
+	  body: data ? JSON.stringify(data) : undefined,
+	})
+    return res.json()
+  } catch (err) {
+    console.error(err)
+    return undefined
+  }
 };
 const owner = process.env.OWNER_NAME || "hackclub";
 const repo = process.env.REPO_NAME || "riceathon";
@@ -30,13 +37,13 @@ const pull_number = process.env.PR_NUMBER;
   );
   console.debug(prData);
   if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
-    simpleApiReq(`repos/${owner}/${repo}/issues/${pr_number}/labels`, "POST", {
+    simpleApiReq(`repos/${owner}/${repo}/issues/${pull_number}/labels`, "POST", {
       labels: ["rice-setup"],
     });
   }
-  const commentError = (message) => {
+  const commentError = async (message) => {
     console.debug("#commentError");
-    simpleApiReq(
+    const res = await simpleApiReq(
       `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
       "POST",
       {
@@ -44,8 +51,9 @@ const pull_number = process.env.PR_NUMBER;
         body: message,
       },
     )
-      .then(console.debug)
-      .catch(console.error);
+    if (!!res) {
+      console.debug(res)
+    }
   };
   // validate members.json file
   // schema
