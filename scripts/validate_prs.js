@@ -37,7 +37,7 @@ const pull_number = process.env.PR_NUMBER;
   );
   console.debug(prData);
   if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
-    simpleApiReq(`repos/${owner}/${repo}/issues/${pull_number}/labels`, "POST", {
+    await simpleApiReq(`repos/${owner}/${repo}/issues/${pull_number}/labels`, "POST", {
       labels: ["rice-setup"],
     });
   }
@@ -57,7 +57,7 @@ const pull_number = process.env.PR_NUMBER;
   };
   // validate members.json file
   // schema
-  // name -> GH username here (ex: John Does dotfiles or what ever you name ur dotfiles)string (req)
+  // name -> GH username here (ex: John Does dotfiles or what ever you name ur dotfiles) string (req)
   // dotfiles git link (optional) string
   // dotfiles os (nixos,arch,etc) string (req)
   // TODO: any other props?
