@@ -19,7 +19,7 @@ See the basics of ricing [here](https://jie-fang.github.io/blog/basics-of-ricing
 
 ### How the process works
 
-1. You customize your Linux desktop (1 hour minimum)
+1. You customize your Linux desktop (5 hour minimum)
 2. Record your hours with [Hackatime](https://waka.hackclub.com/) and push your rice configuration to a github repo
 3. You submit it to us in a PR
 4. Submit the form to us
