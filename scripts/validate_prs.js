@@ -37,7 +37,7 @@ const pull_number = process.env.PR_NUMBER;
       Accept: "application/vnd.github.text+json",
     },
   );
-  if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
+  if (prData.body && prData.body.includes("automation:labels:rice")) {
     await simpleApiReq(
       `repos/${owner}/${repo}/issues/${pull_number}/labels`,
       "POST",
@@ -49,11 +49,10 @@ const pull_number = process.env.PR_NUMBER;
   const commentError = async (message) => {
     console.debug("#commentError");
     await simpleApiReq(
-      `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
+      `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
       "POST",
       {
-        event: "REQUEST_CHANGES",
-        body: message,
+        body: `members.json is invalid:\n${message}`,
       },
     );
   };
@@ -95,7 +94,7 @@ const pull_number = process.env.PR_NUMBER;
         }
       }
     } else {
-      await commentError(`Its not an array `);
+      await commentError(`It's not an array `);
     }
   } catch (e) {
     await commentError("Broken JSON:\n```" + e.toString() + "```");
@@ -106,11 +105,10 @@ const pull_number = process.env.PR_NUMBER;
     }, 5 * 1000);
   } else {
     await simpleApiReq(
-      `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
+      `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
       "POST",
       {
-        event: "APPROVE",
-        body: "All tests passed",
+        body: "members.json is valid",
       },
     );
   }
