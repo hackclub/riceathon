@@ -13,7 +13,7 @@ const simpleApiReq = async (r, method, data, headers) => {
       },
       body: data ? JSON.stringify(data) : undefined,
     });
-    return res.json();
+    console.debug(res.json());
   } catch (err) {
     console.error(err);
     return undefined;
@@ -47,7 +47,7 @@ const pull_number = process.env.PR_NUMBER;
   }
   const commentError = async (message) => {
     console.debug("#commentError");
-    const res = await simpleApiReq(
+    await simpleApiReq(
       `repos/${owner}/${repo}/pulls/${pull_number}/reviews`,
       "POST",
       {
@@ -55,9 +55,6 @@ const pull_number = process.env.PR_NUMBER;
         body: message,
       },
     );
-    if (!!res) {
-      console.debug(res);
-    }
   };
   // validate members.json file
   // schema
