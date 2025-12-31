@@ -4,19 +4,19 @@ const simpleApiReq = async (r, method, data, headers) => {
   console.debug("#req");
   try {
     const res = await fetch("https://api.github.com/" + r, {
-	  method: method || "GET",
-	  headers: {
-	    ...(headers ?? {}),
-	    "User-Agent": "Riceathon-PR-Validation",
-	    Accept: "application/vnd.github+json",
-	    Authorization: "Bearer " + process.env.GITHUB_TOKEN,
-	  },
-	  body: data ? JSON.stringify(data) : undefined,
-	})
-    return res.json()
+      method: method || "GET",
+      headers: {
+        ...(headers ?? {}),
+        "User-Agent": "Riceathon-PR-Validation",
+        Accept: "application/vnd.github+json",
+        Authorization: "Bearer " + process.env.GITHUB_TOKEN,
+      },
+      body: data ? JSON.stringify(data) : undefined,
+    });
+    return res.json();
   } catch (err) {
-    console.error(err)
-    return undefined
+    console.error(err);
+    return undefined;
   }
 };
 const owner = process.env.OWNER_NAME || "hackclub";
@@ -37,9 +37,13 @@ const pull_number = process.env.PR_NUMBER;
   );
   console.debug(prData);
   if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
-    await simpleApiReq(`repos/${owner}/${repo}/issues/${pull_number}/labels`, "POST", {
-      labels: ["rice-setup"],
-    });
+    await simpleApiReq(
+      `repos/${owner}/${repo}/issues/${pull_number}/labels`,
+      "POST",
+      {
+        labels: ["rice-setup"],
+      },
+    );
   }
   const commentError = async (message) => {
     console.debug("#commentError");
@@ -50,9 +54,9 @@ const pull_number = process.env.PR_NUMBER;
         event: "REQUEST_CHANGES",
         body: message,
       },
-    )
+    );
     if (!!res) {
-      console.debug(res)
+      console.debug(res);
     }
   };
   // validate members.json file
