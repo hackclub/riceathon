@@ -13,7 +13,9 @@ const simpleApiReq = async (r, method, data, headers) => {
       },
       body: data ? JSON.stringify(data) : undefined,
     });
-    console.debug(res.json());
+    const json = await res.json();
+    console.debug(json);
+    return json;
   } catch (err) {
     console.error(err);
     return undefined;
@@ -35,7 +37,6 @@ const pull_number = process.env.PR_NUMBER;
       Accept: "application/vnd.github.text+json",
     },
   );
-  console.debug(prData);
   if (prData.body_text && prData.body_text.includes("automation:labels:rice")) {
     await simpleApiReq(
       `repos/${owner}/${repo}/issues/${pull_number}/labels`,
