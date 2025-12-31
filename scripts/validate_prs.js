@@ -49,7 +49,7 @@ const pull_number = process.env.PR_NUMBER;
   const commentError = async (message) => {
     console.debug("#commentError");
     await simpleApiReq(
-      `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
+      `repos/${owner}/${repo}/issues/${pull_number}/comments`,
       "POST",
       {
         body: `members.json is invalid:\n${message}`,
@@ -105,7 +105,7 @@ const pull_number = process.env.PR_NUMBER;
     }, 5 * 1000);
   } else {
     await simpleApiReq(
-      `repos/${owner}/${repo}/pulls/${pull_number}/comments`,
+      `repos/${owner}/${repo}/issues/${pull_number}/comments`,
       "POST",
       {
         body: "members.json is valid",
