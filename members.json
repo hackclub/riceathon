@@ -950,5 +950,16 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
-  }
+  },
+  {
+    "name": "Niko's potato with rice",
+    "distro": "arch",
+    "git": "https://github.com/sysangl/potatoes-and-a-side-of-rice",
+    "images": [
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/SS1.png",
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/SS2.png",
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/SS3.png",
+    ],
+    "version": 1
+  },
 ]
