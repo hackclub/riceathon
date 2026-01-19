@@ -952,13 +952,14 @@
     "version": 2
   },
   {
-    "name": "Niko's potato with rice",
+    "name": "Niko's potato and rice",
     "distro": "arch",
     "git": "https://github.com/sysangl/potatoes-and-a-side-of-rice",
     "images": [
-      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/SS1.png",
-      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/SS2.png",
-      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/SS3.png",
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/ps-rofi.png",
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/ps-tuis.png",
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/mc-empty.png",
+      "https://raw.githubusercontent.com/sysangl/potatoes-and-a-side-of-rice/main/assets/mc-bg.png",
     ],
     "version": 1
   },
