@@ -956,8 +956,8 @@
     "distro": "arch",
     "git": "https://github.com/cookiemonsternz/arch-rice",
     "images": [
-      "https://github.com/cookiemonsternz/arch-rice/blob/main/MainSS.png",
-      "https://github.com/cookiemonsternz/arch-rice/blob/main/LockScreenSS.png"
+      "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/MainSS.png",
+      "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/LockScreenSS.png"
     ],
     "version": 2
   }
