@@ -950,5 +950,17 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
+  },
+    {
+    "name": "YummyRice",
+    "distro": "Arch",
+    "git": "https://github.com/Anthony-Queen/YummyRice",
+    "images": [
+      "https://github.com/Anthony-Queen/YummyRice/raw/main/screenshots/Setup.png",
+      "https://github.com/Anthony-Queen/YummyRice/raw/main/screenshots/Wofi",
+      "https://github.com/Anthony-Queen/YummyRice/raw/main/screenshots/WalSelector",
+      "https://github.com/Anthony-Queen/YummyRice/raw/main/screenshots/Wofiv2"
+    ],
+    "version": 2
   }
 ]
