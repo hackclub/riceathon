@@ -950,5 +950,15 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Cookiemonsternz Dotfiles",
+    "distro": "arch",
+    "git": "https://github.com/cookiemonsternz/arch-rice",
+    "images": [
+      "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/MainSS.png",
+      "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/LockScreenSS.png"
+    ],
+    "version": 2
   }
 ]
