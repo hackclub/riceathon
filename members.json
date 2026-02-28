@@ -950,5 +950,16 @@
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Abstract Nord Theme",
+    "distro": "arch",
+    "git": "https://github.com/Iviv122/Rice2",
+    "images":[
+      "https://cdn.hackclub.com/019ca3fb-fe4f-74b6-90e4-610d5c240703/image.png",
+      "https://cdn.hackclub.com/019ca3fc-0004-7f97-b201-87b0439f0408/image.png",
+      "https://cdn.hackclub.com/019ca3fc-01a0-7a01-8693-753c488e1578/image.png"
+    ],
+    "version": 1
   }
 ]
