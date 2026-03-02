@@ -29,5 +29,3 @@ _prizes include smolhaj,hacker socks, hc merch and much more_
 
 In the form, you will need to put the email to your Slack account.
 This email must be linked to your hakatime in order for it to count.
-
-hi
