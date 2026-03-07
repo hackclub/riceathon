@@ -4,11 +4,11 @@
     "distro": "Fedora",
     "git": "https://github.com/ThePikachuDev/riceathon",
     "images": [
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/11069b07c825aef8181ed272040b6a7676b4bfc2_kew_nvim.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/208ffc656be0e95070abd5487f1a128274d7d588_lightscreen_fastfetch.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/02976f5999b2113c8c9fdda41fe0453b1c1f8637_lock_screen.webp",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ea70d3d80b20dd26466bd1713bcda8f231673ab_myown_power_widget.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9e92cca65da55828401659cafa14a78ae8c7f1d7_darkscreen_fastfetch.png"
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/11069b07c825aef8181ed272040b6a7676b4bfc2_kew_nvim.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/208ffc656be0e95070abd5487f1a128274d7d588_lightscreen_fastfetch.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/02976f5999b2113c8c9fdda41fe0453b1c1f8637_lock_screen.webp",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ea70d3d80b20dd26466bd1713bcda8f231673ab_myown_power_widget.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/9e92cca65da55828401659cafa14a78ae8c7f1d7_darkscreen_fastfetch.png"
     ],
     "version": 2
   },
@@ -785,8 +785,8 @@
     "name": "sophia0805 ocean themed rice",
     "distro": "kubuntu",
     "images": [
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/95cb582f12aa1369b9aa2de2e1d9bfb6bcd4bf93_screenshot_2025-06-21_223012.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/03738053b96031ea5704791758cf6b9599ba0a08_screenshot_2025-06-21_223330.png"
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/95cb582f12aa1369b9aa2de2e1d9bfb6bcd4bf93_screenshot_2025-06-21_223012.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/03738053b96031ea5704791758cf6b9599ba0a08_screenshot_2025-06-21_223330.png"
     ],
     "git": "https://github.com/sophia0805/ocean-dotfiles",
     "version": 2
@@ -834,10 +834,10 @@
     "distro": "fedora asahi",
     "git": "https://github.com/mannireis/dotfiles",
     "images": [
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/552794e0bedb5f05175d0f70b7b2f622ee07eae2_screenshot_2025-06-26_12_13_07.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/13ecfd6ff0911be38d4504e7a0d10ac1aef2b78c_screenshot_2025-06-26_12_14_19.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/8498d596a90885ef3dbac1a45f46c1247e9f7b3c_screenshot_2025-06-26_12_14_01.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/722e642575da37fb6a9c3993210b507fbc8ab2f2_screenshot_2025-06-26_12_13_10.png"
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/552794e0bedb5f05175d0f70b7b2f622ee07eae2_screenshot_2025-06-26_12_13_07.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/13ecfd6ff0911be38d4504e7a0d10ac1aef2b78c_screenshot_2025-06-26_12_14_19.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/8498d596a90885ef3dbac1a45f46c1247e9f7b3c_screenshot_2025-06-26_12_14_01.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/722e642575da37fb6a9c3993210b507fbc8ab2f2_screenshot_2025-06-26_12_13_10.png"
     ],
     "version": 2
   },
@@ -897,7 +897,7 @@
     "distro": "endeavourOS",
     "git": "https://github.com/strawberry-p/dotfiles",
     "images": [
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/9ba16a1619e0d95def136aef862d3323de370613_riceathon-terminals.png"
     ],
     "version": 2
   },
@@ -946,8 +946,8 @@
     "distro": "linuxmint",
     "git": "https://github.com/GingerGigiCat/mint-dotfiles",
     "images": [
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/3b7069fd98a533fdf1a06ec76e007f4e5988f943_image.png",
-      "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/3b7069fd98a533fdf1a06ec76e007f4e5988f943_image.png",
+      "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
   },
