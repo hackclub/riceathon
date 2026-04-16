@@ -940,5 +940,12 @@
       "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Dumi",
+    "distro": "cachyOS",
+    "git": "https://github.com/N0TM3-1/dotfiles.git",
+    "images": ["https://raw.githubusercontent.com/N0TM3-1/dotfiles/refs/heads/main/screenshot.png"],
+    "version": 3
   }
 ]
