@@ -940,5 +940,16 @@
       "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
+  },
+  {
+    "name": "SPC",
+    "distro": "Arch",
+    "git": "https://github.com/dragonruler1000/riceathon/tree/SPC-rice",
+    "images": [
+      "https://cdn.hackclub.com/019cac9a-3ba2-75f7-94c2-c9e267b51288/2026-03-01-205414_hyprshot.png",
+      "https://cdn.hackclub.com/019cac9a-3df3-7582-8db0-4d8d21d5eb6a/2026-03-01-205520_hyprshot.png",
+      "https://cdn.hackclub.com/019cac9a-405c-71bc-9929-00a06ff31b6d/20260301_211447.jpg"
+    ],
+    "version": 3
   }
 ]
