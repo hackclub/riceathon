@@ -940,5 +940,16 @@
       "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/bcfddbb759c995a3358269d04f0edffc0741005a_image.png"
     ],
     "version": 2
+  },
+  {
+    "name": "Amethyst",
+    "distro": "nixos",
+    "git": "https://github.com/FishyNavi/nixos-config",
+    "images": [
+      "https://cdn.hackclub.com/019d873f-d264-7724-9427-086c2068823f/image.png",
+      "https://cdn.hackclub.com/019d873f-d565-722e-b5f5-9380223acffa/image.png",
+      "https://cdn.hackclub.com/019d873f-d845-75e1-b684-79ddd276ab54/image.png"
+    ],
+    "version": 1
   }
 ]
