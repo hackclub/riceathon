@@ -942,6 +942,15 @@
     "version": 2
   },
   {
+    "name": "soap phia's hyprland rice",
+    "distro": "arch",
+    "git": "https://github.com/soap-phia/hyprland-riceathon-v3",
+    "images": [
+      "https://raw.githubusercontent.com/soap-phia/hyprland-riceathon-v3/refs/heads/main/rice.png"
+    ],
+    "version": 2
+  },
+  {
     "name": "Abstract Nord Theme",
     "distro": "arch",
     "git": "https://github.com/Iviv122/Rice2",
