@@ -960,5 +960,16 @@
       "https://cdn.hackclub.com/019ca3fc-01a0-7a01-8693-753c488e1578/image.png"
     ],
     "version": 3
+  },
+  {
+    "name": "tty only & touhou clownpiece",
+    "distro": "alpine & artix",
+    "git": "https://git.jamjar.ws/strat/dots",
+    "images":[
+      "https://github.com/stratjam/dots/blob/main/clownpiece1.png?raw=true",
+      "https://github.com/stratjam/dots/blob/main/clownpiece2.png?raw=true",
+      "https://github.com/stratjam/dots/blob/main/lain.png?raw=true"
+    ],
+    "version": 2
   }
 ]
