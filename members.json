@@ -971,5 +971,15 @@
       "https://github.com/stratjam/dots/blob/main/lain.png?raw=true"
     ],
     "version": 2
+  },
+  {
+    "name": "Cookiemonsternz Dotfiles",
+    "distro": "arch",
+    "git": "https://github.com/cookiemonsternz/arch-rice",
+    "images": [
+      "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/MainSS.png",
+      "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/LockScreenSS.png"
+    ],
+    "version": 3
   }
 ]
