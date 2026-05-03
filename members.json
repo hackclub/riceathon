@@ -951,6 +951,12 @@
     "version": 2
   },
   {
+    "name": "Dumi",
+    "distro": "cachyOS",
+    "git": "https://github.com/N0TM3-1/dotfiles.git",
+    "images": ["https://raw.githubusercontent.com/N0TM3-1/dotfiles/refs/heads/main/screenshot.png"],
+    "version": 3
+},
     "name": "Abstract Nord Theme",
     "distro": "arch",
     "git": "https://github.com/Iviv122/Rice2",
@@ -980,6 +986,7 @@
       "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/MainSS.png",
       "https://raw.githubusercontent.com/cookiemonsternz/arch-rice/refs/heads/main/LockScreenSS.png"
     ],
+
     "version": 3
   }
 ]
