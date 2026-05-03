@@ -1,8 +1,4 @@
 <!-- Use this template if you are submitting a rice. If not delete all content in this template -->
-<!-- PLEASE DELETE THE FOLLOWING LINE BELOW IF YOU ARE NOT DOING A RICE -->
-<!-- automation:labels:rice -->
-
-<!-- Replace "My Rice" with the name of your rice -->
 
 ## My Rice
 
@@ -18,18 +14,12 @@
   <!-- This will improve the PR and make it easier to approve -->
   <!-- if you don't have a source code link, replace the example with N/A
 - Screenshots of your rice
-  <!-- Screenshots of your rice -->
-  <!-- optional if source code is provided -->
-  <!-- Highly recommended! -->
 
 ## Extra Comments
 
 ## Checklist
 
-- [ ] I have filled out the form correctly
-- [ ] I have my PR labeled correctly
 - [ ] I have not already submitted a rice
 - [ ] Under the section where it states "How many hours did it take to write this:" I have filled in my hours
 - [ ] i have my screenshot images in the json file (urls please).
 - [ ] i have my hackatime badge
-- - if you have errors finding it please put your slack ID instead!!

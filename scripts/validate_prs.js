@@ -1,115 +1,114 @@
-// using node-fetch instead of octokit.
 const fs = require("fs");
-const simpleApiReq = async (r, method, data, headers) => {
-  console.debug("#req");
-  try {
-    const res = await fetch("https://api.github.com/" + r, {
-      method: method || "GET",
-      headers: {
-        ...(headers ?? {}),
-        "User-Agent": "Riceathon-PR-Validation",
-        Accept: "application/vnd.github+json",
-        Authorization: "Bearer " + process.env.GITHUB_TOKEN,
-      },
-      body: data ? JSON.stringify(data) : undefined,
-    });
-    const json = await res.json();
-    console.debug(json);
-    return json;
-  } catch (err) {
-    console.error(err);
-    return undefined;
-  }
-};
-const owner = process.env.OWNER_NAME || "hackclub";
-const repo = process.env.REPO_NAME || "riceathon";
-const pull_number = process.env.PR_NUMBER;
+const { execSync } = require("child_process");
 
-// break in line prettier
+function validateShape(entry, index) {
+  const errors = [];
+  const name = entry.name || "(unnamed)";
+  const label = "Entry " + index + ' ("' + name + '")';
 
-(async () => {
-  console.log(`Checking out PR #${pull_number}`);
-  const prData = await simpleApiReq(
-    `repos/${owner}/${repo}/pulls/${pull_number}`,
-    undefined,
-    undefined,
-    {
-      Accept: "application/vnd.github.text+json",
-    },
-  );
-  if (prData.body && prData.body.includes("automation:labels:rice")) {
-    await simpleApiReq(
-      `repos/${owner}/${repo}/issues/${pull_number}/labels`,
-      "POST",
-      {
-        labels: ["rice-setup"],
-      },
-    );
-  }
-  const commentError = async (message) => {
-    console.debug("#commentError");
-    await simpleApiReq(
-      `repos/${owner}/${repo}/issues/${pull_number}/comments`,
-      "POST",
-      {
-        body: `members.json is invalid:\n${message}`,
-      },
-    );
-  };
-  // validate members.json file
-  // schema
-  // name -> GH username here (ex: John Does dotfiles or what ever you name ur dotfiles) string (req)
-  // dotfiles git link (optional) string
-  // dotfiles os (nixos,arch,etc) string (req)
-  // TODO: any other props?
-  function validate(obj) {
-    if (!obj.name) throw "No Name";
-    if (!obj.distro) throw "No OS provided";
-    if (obj.git && typeof obj.git !== "string") throw "git is not a string";
-    if (typeof obj.name !== "string") throw "Name is not a string";
-    if (typeof obj.distro !== "string") throw "OS is not a string";
-    if (
-      obj.git &&
-      typeof obj.git === "string" &&
-      !obj.git.startsWith("https://")
-    )
-      throw "git is not a url";
-    return true;
-  }
-  const members = fs.readFileSync(process.cwd() + "/members.json");
-  let already_thrown = false;
-  try {
-    let parsed = JSON.parse(members);
-    if (Array.isArray(parsed)) {
-      for (const e of parsed) {
-        console.log(`Checking `, e);
-        //        if (already_thrown) throw e;
-        try {
-          console.log(`Validation??`);
-          validate(e);
-        } catch (e) {
-          console.error(e);
-          already_thrown = e;
-          await commentError(e.toString());
-        }
-      }
-    } else {
-      await commentError(`It's not an array `);
-    }
-  } catch (e) {
-    await commentError("Broken JSON:\n```" + e.toString() + "```");
-  }
-  if (already_thrown) {
-    setTimeout(() => {
-      process.exit(1);
-    }, 5 * 1000);
+  if (!entry.name || typeof entry.name !== "string")
+    errors.push(label + ': "name" must be a non-empty string');
+  if (!entry.distro || typeof entry.distro !== "string")
+    errors.push(`${label}: "distro" must be a non-empty string`);
+  if (entry.git !== undefined && (typeof entry.git !== "string" || !entry.git.startsWith("https://")))
+    errors.push(`${label}: "git" must be an https:// URL`);
+  if (!Array.isArray(entry.images) || entry.images.length === 0) {
+    errors.push(`${label}: "images" must be a non-empty array`);
   } else {
-    await simpleApiReq(
-      `repos/${owner}/${repo}/issues/${pull_number}/comments`,
-      "POST",
-      {
-        body: "members.json is valid",
-      },
-    );
+    for (const img of entry.images) {
+      if (typeof img !== "string" || !img.startsWith("https://"))
+        errors.push(`${label}: image "${img}" must be an https:// URL`);
+    }
   }
-})();
+  if (entry.version !== undefined && typeof entry.version !== "number")
+    errors.push(`${label}: "version" must be a number`);
+
+  return errors;
+}
+
+async function checkUrl(url) {
+  try {
+    // Try HEAD first, fall back to GET (some CDNs reject HEAD)
+    let res = await fetch(url, {
+      method: "HEAD",
+      redirect: "follow",
+      signal: AbortSignal.timeout(10000),
+    });
+    if (res.ok) return null;
+    res = await fetch(url, {
+      method: "GET",
+      redirect: "follow",
+      signal: AbortSignal.timeout(10000),
+    });
+    if (res.ok) return null;
+    return `${url} returned ${res.status}`;
+  } catch (e) {
+    return `${url} failed: ${e.message}`;
+  }
+}
+
+function getBaseMembers() {
+  try {
+    const base = execSync("git show origin/main:members.json", { encoding: "utf-8" });
+    return JSON.parse(base);
+  } catch {
+    return [];
+  }
+}
+
+function findNewEntries(current, base) {
+  const baseNames = new Set(base.map((e) => JSON.stringify(e)));
+  return current.filter((e) => !baseNames.has(JSON.stringify(e)));
+}
+
+async function main() {
+  const raw = fs.readFileSync("members.json", "utf-8");
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (e) {
+    console.error("Broken JSON:", e.message);
+    process.exit(1);
+  }
+
+  if (!Array.isArray(parsed)) {
+    console.error("members.json is not an array");
+    process.exit(1);
+  }
+
+  // Validate shape of every entry
+  const shapeErrors = parsed.flatMap((entry, i) => validateShape(entry, i));
+  for (const err of shapeErrors) console.error(err);
+
+  // URL-check only new/changed entries
+  const base = getBaseMembers();
+  const newEntries = findNewEntries(parsed, base);
+  console.log(`Found ${newEntries.length} new/changed entries to URL-check`);
+
+  const urlErrors = [];
+  for (const entry of newEntries) {
+    const label = `"${entry.name}"`;
+
+    if (entry.git) {
+      const err = await checkUrl(entry.git);
+      if (err) urlErrors.push(`${label} git: ${err}`);
+    }
+
+    for (const img of entry.images || []) {
+      const err = await checkUrl(img);
+      if (err) urlErrors.push(`${label} image: ${err}`);
+    }
+  }
+
+  for (const err of urlErrors) console.error(err);
+
+  const totalErrors = shapeErrors.length + urlErrors.length;
+  if (totalErrors > 0) {
+    console.error(`\n${totalErrors} error(s) found`);
+    process.exit(1);
+  }
+
+  console.log("members.json is valid");
+}
+
+main();

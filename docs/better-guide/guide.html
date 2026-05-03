@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Riceathon Guide</title>
@@ -154,9 +154,11 @@
                     
                     contentEl.innerHTML = content;
 
-                    document.querySelectorAll("pre code[class*='language-']").forEach((block) => {
-                        hljs.highlightElement(block);
-                    });
+                    document
+                        .querySelectorAll("pre code[class*='language-']")
+                        .forEach((block) => {
+                            hljs.highlightElement(block);
+                        });
 
                     window.scrollTo(0, 0);
                     updateNavigation(part);

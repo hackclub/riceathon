@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #14141f;
+  --bar: #11111b;
+  --border: #1e1e2e;
+  --text: #cdd6f4;
+  --text-dim: #585b70;
+  --accent: #94e2d5;
+  --accent-dim: #94e2d518;
+  --overlay: #181825;
+  --mauve: #cba6f7;
+  --pink: #f38ba8;
+  --radius: 12px;
+  --mono: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: var(--mauve);
+}
+
+/* --- Powerline bar --- */
+.bar {
+  display: flex;
+  align-items: stretch;
+  height: 32px;
+  background: var(--bg);
+  font-size: 13px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.pl-seg {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 500;
+}
+
+.pl-seg::after {
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid var(--_bg);
+  z-index: 1;
+}
+
+.pl-mode {
+  --_bg: #cba6f7;
+  background: var(--_bg);
+  color: #11111b;
+  font-weight: 700;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+}
+
+.pl-path {
+  --_bg: #45475a;
+  background: var(--_bg);
+  color: #cdd6f4;
+  padding-left: 24px;
+}
+
+.pl-path .sep {
+  color: #6c7086;
+  padding: 0 3px;
+}
+
+.pl-file {
+  --_bg: #313244;
+  background: var(--_bg);
+  color: #a6adc8;
+  padding-left: 24px;
+}
+
+.bar-spacer {
+  flex: 1;
+  background: var(--bg);
+}
+
+.pl-hints {
+  --_bg: #313244;
+  background: var(--_bg);
+  color: #a6adc8;
+  padding-left: 12px;
+  padding-right: 24px;
+  font-size: 11px;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 0;
+  filter: brightness(0.8);
+  transition: opacity 0.2s ease;
+}
+
+.pl-hints-trigger {
+  --_bg: #313244;
+  background: var(--_bg);
+  color: #a6adc8;
+  cursor: pointer;
+}
+
+.bar:has(.pl-hints-trigger:hover) .pl-hints {
+  opacity: 1;
+}
+
+.pl-hints::before,
+.pl-hints-trigger::before,
+.pl-search::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid var(--_bg);
+  z-index: 1;
+}
+
+.pl-hints-trigger::after {
+  display: none;
+}
+
+.pl-search::before {
+  background: #313244;
+}
+
+.pl-search {
+  --_bg: #f38ba8;
+  background: var(--_bg);
+  color: #11111b;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.pl-search::before {
+  border-right-color: #f38ba8;
+}
+
+.pl-search::after {
+  display: none;
+}
+.pl-search:hover {
+  filter: brightness(1.1);
+}
+
+.pl-search kbd {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 13px;
+  background: var(--overlay);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 3px 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  transform: translateY(-5px);
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  line-height: 1.2;
+}
+
+.pl-search:hover kbd {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Hyprland-like Card Animation --- */
+@keyframes hyprIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.05, 0.9, 0.1, 1);
+  animation: hyprIn 0.6s cubic-bezier(0.05, 0.9, 0.1, 1.1) backwards;
+}
+
+.card:hover {
+  border-color: #45475a;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
