@@ -988,5 +988,14 @@
     ],
 
     "version": 3
+  },
+  {
+    "name": "Benji's Dotfiles",
+    "distro": "arch",
+    "git": "https://github.com/BenjaminDerProgrammierer/dotfiles",
+    "images": [
+      "https://raw.githubusercontent.com/benjaminderprogrammierer/dotfiles/refs/heads/master/screenshots/2026-05-28-090654_hyprshot.png",
+    ],
+    "version": 3
   }
 ]
