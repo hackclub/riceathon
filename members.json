@@ -988,5 +988,15 @@
     ],
 
     "version": 3
+  },
+  {
+    "name": "val's rice",
+    "distro": "Arch",
+    "git": "https://git.ouppy.gay/valerie/dotfiles",
+    "images": [
+      "https://ouppy.gay/static/dotfiles-assets/1.png",
+      "https://ouppy.gay/static/dotfiles-assets/2.png"
+    ],
+    "version": 3
   }
 ]
