@@ -994,7 +994,7 @@
     "distro": "fedora",
     "git": "https://github.com/kanokid/dotfiles",
     "images": [
-      "https://raw.githubusercontent.com/kanokid/dotfiles/main/screenshots/1.png"
+      "https://raw.githubusercontent.com/kanokid/dotfiles/main/screenshots/1.png",
       "https://raw.githubusercontent.com/kanokid/dotfiles/main/screenshots/2.png"
     ],
     "version": 3
